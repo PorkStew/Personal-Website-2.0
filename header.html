@@ -4,74 +4,47 @@
         <link rel="shortcut icon" href="images/SImage.png" type="image/x-icon"/>
 
         <link rel='stylesheet' type='text/css' media='screen' href='css/header/header.css'>
+        <script src="javaScript/header/home.js"></script>
     </head>
     <body>
+        
+        <nav>
 
-        
-    <!-- this is the overlay shown when on non desktop devices-->
-    <nav id="overlay">
-        <!-- <img src="images/Close-btn-Black.svg" class="close-btn" id="close-menu"> -->
-        <ul>
-            <li>
-                <span  onclick="window.location='index.html'">HOME</span>
-            </li>
-            <li>
-                <span onclick="window.location='our-team.html'">OUR TEAM</span>
-            </li>
-            <li>
-                <span onclick="window.location='about.html'">ABOUT</span>
-            </li>
-            <li>
-                <span onclick="window.location='contact.html'">CONTACT</span>
-            </li>
-        </ul>
-    </nav>
-    <!---->
-    <!-- this is the header menu shown when on larger screens like a desktop-->
-    <header>
-        <!-- <img src="images/Hamburger Icon-Black.svg" class="menu-btn" id="open-menu"> -->
-       
-    
-        
-            <ul class="nav_links">
-                <li>
-                    <a onclick="window.location='index.html'">HOME</a>
-                </li>
-                <li>
-                    <a onclick="window.location='projects.html'">WHAT WE'VE CREATED</a>
-                </li>
-                <li>
-                    <a onclick="window.location='our-team.html'">OUR TEAM</a>
-                </li>
-                <li>
-                    <a onclick="window.location='about.html'">ABOUT</a>
-                </li>
-                <li>
-                    <a onclick="window.location='contact.html'">CONTACT</a>
-                </li>
+          <div class="menu-wrapper">
+            <div class="hamburger-menu"></div>	  
+          </div>
+
+
+
+            <div class="container">
+                <div class="stick stick-1"></div>
+                <div class="stick stick-2"></div>
+                <div class="stick stick-3"></div>
+              </div>
+            <ul class="nav-links">
+              <tr> 
+                <hr style="width: 100px; border:1px solid #FF893A;"/>   
+              </tr>
+              <li><a href="#">MY STORY</a></li>
+              <li><a href="#">PROJECTS</a></li>
+              <img class="logo" src="images/header/Logo.svg" alt="logo">
+              <li><a href="#">INSPIRATION</a></li>
+              <li><a href="#">CONTACT</a></li>
+              <hr style="width: 100px; border:1px solid #FF893A;"/>  
             </ul>
-       
-    </header>
-    <!---->
-     <!--this will make the hamburger icon active and the x button active when clicked -->
+          </nav>
+        
      <script>
-        var overlay = document.getElementById('overlay');
-        var closeMenu = document.getElementById('close-menu');
-        document.getElementById('open-menu').addEventListener('click', function()
-        {
-            overlay.classList.add('show-menu');
-            //prevents scrolling when overlay is open
-            document.documentElement.style.overflow = 'hidden';
-            document.body.scroll = "no";
-            
-        });
-        document.getElementById('close-menu').addEventListener('click', function()
-        {
-            overlay.classList.remove('show-menu');
-            //allows scrolling when overlay is closed
-            document.documentElement.style.overflow = 'scroll';
-            document.body.scroll = "yes";
-        });
+const hamburger = document.querySelector(".menu-wrapper");
+const navLinks = document.querySelector(".nav-links");
+const links = document.querySelectorAll(".nav-links li");
+
+hamburger.addEventListener("click", () => {
+  navLinks.classList.toggle("open");
+  links.forEach(link => {
+    link.classList.toggle("fade");
+  });
+});
     </script>
 
 

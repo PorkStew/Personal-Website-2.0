@@ -1,1 +1,23 @@
-/* No CSS *//*# sourceMappingURL=index.css.map */
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.img {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../../images/index/sukant-sharma-oCGLfr7GSPk-unsplash.jpg") no-repeat center center fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../images/index/sukant-sharma-oCGLfr7GSPk-unsplash.jpg") no-repeat center center fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+section {
+  height: 600px;
+  background-color: #1A222F;
+}
+/*# sourceMappingURL=index.css.map */

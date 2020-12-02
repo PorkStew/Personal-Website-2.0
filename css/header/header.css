@@ -37,46 +37,21 @@ nav {
 .logo {
   position: absolute;
   z-index: 5;
-  padding-top: 28px;
-  margin-left: 25px;
+  padding-top: 30px;
+  margin-left: 30px;
   width: 28px;
-}
-
-.landing {
-  height: 90vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.landing h1 {
-  margin: 100px;
-  font-size: 50px;
-  color: #ae5fce;
 }
 
 .line {
   height: 3px;
   background-color: #FF893A;
   margin: 5px;
+  -webkit-transition: all cubic-bezier(0.26, 1, 0.27, 1.55) 0.35s;
+  transition: all cubic-bezier(0.26, 1, 0.27, 1.55) 0.35s;
 }
 
 .hamburger div:nth-child(1) {
   width: 27px;
-}
-
-.hamburger div:nth-child(2) {
-  width: 32px;
-}
-
-.hamburger div:nth-child(3) {
-  width: 25px;
 }
 
 nav {
@@ -87,7 +62,7 @@ nav {
   z-index: 3;
   position: absolute;
   cursor: pointer;
-  right: 7%;
+  right: 30px;
   top: 50%;
   -webkit-transform: translate(-5%, -50%);
           transform: translate(-5%, -50%);
@@ -102,7 +77,7 @@ nav {
   padding-left: 50px;
   display: block;
   clip-path: circle(100px at 90% -10%);
-  -webkit-clip-path: circle(100px at 90% -15%);
+  -webkit-clip-path: circle(100px at 90% -20%);
   -webkit-transition: all 1s ease-out;
   transition: all 1s ease-out;
   pointer-events: none;
@@ -112,8 +87,8 @@ nav {
   clip-path: circle(1000px at 90% -10%);
   -webkit-clip-path: circle(1000px at 90% -10%);
   pointer-events: all;
-  -webkit-transition: all 300ms ease-in-out;
-  transition: all 300ms ease-in-out;
+  -webkit-transition: all 1000ms ease-in-out;
+  transition: all 1000ms ease-in-out;
   -webkit-transform-origin: top left;
           transform-origin: top left;
 }
@@ -121,10 +96,8 @@ nav {
 .hamburger.animate .line:nth-child(1) {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-  -webkit-transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
-  transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
-  transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
-  transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  -webkit-transform-origin: 0% 48%;
+          transform-origin: 0% 48%;
 }
 
 .hamburger.animate .line:nth-child(2) {
@@ -132,10 +105,10 @@ nav {
 }
 
 .hamburger.animate .line:nth-child(3) {
-  -webkit-transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
-  transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
-  transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
-  transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transform-origin: 16% 100%;
+          transform-origin: 16% 100%;
 }
 
 .landing {
@@ -167,6 +140,11 @@ nav {
 .nav-links li:nth-child(3) {
   -webkit-transition: all 0.5s ease 0.6s;
   transition: all 0.5s ease 0.6s;
+}
+
+.nav-links li:nth-child(4) {
+  -webkit-transition: all 0.5s ease 0.8s;
+  transition: all 0.5s ease 0.8s;
 }
 
 li.fade {
@@ -209,6 +187,20 @@ li.fade {
     text-decoration: none;
     font-size: 16px;
     padding: 20px;
+  }
+  .desktop-nav-links a:hover {
+    color: #FF893A;
+    -webkit-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+  }
+  .desktop-nav-links a::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 8px;
+    width: 0;
   }
 }
 /*# sourceMappingURL=header.css.map */

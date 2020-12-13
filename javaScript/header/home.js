@@ -12,3 +12,7 @@ hamburger.addEventListener("click", () => {
     link.classList.toggle("fade");
   });
 });
+//$(document).on('click', 'div ul li', function() {
+ // $(this).addClass('active').siblings().removeClass('active')
+//})
+

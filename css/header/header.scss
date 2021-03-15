@@ -1,29 +1,345 @@
+// body, html {
+//   background: #151515;
+//   /* height: 100%;
+//   padding: 0px;
+//   margin: 0px; */
+// }
+
+// h1 {
+//   margin: 0px;
+//   font-size: 50px;
+//   padding-top: 100px;
+//   text-align: center;
+// }
+
+// .color-picker-container{
+//   padding-top: 30px;
+//   padding-right: 40%;
+// }
+// .color-picker-container {
+//   /* padding-top: 30px;
+//   padding-right: 40%; */
+//   // padding-right: 50px;
+//   // padding-top: 200px;
+//   // float: right;
+//   display: none;
+//   position: fixed;
+//   float: right;
+//     right: 50px;
+//     top: 50%;
+// }
+
+.menu{
+  //display: none;
+  position: fixed;
+  // float: right;
+    right: 50px;
+    top: 40%;
+}
+.blue {
+  position: relative;
+  z-index: 2;
+  /* this takes the 2 divs and makes them one so its one line
+  to see this change the red color and blue while removing transform */
+  /* transform: translateX(-25px); */
+}
+
+.color-picker-svg {
+  width: 32px;
+  padding-left: 24px;
+  padding-top: 22px;
+}
+.home-svg{
+  width: 37px;
+  height: 27px;
+  padding-left: 21px;
+  padding-top: 26px;
+}
+.chatting-svg{
+  width: 37px;
+  height: 27px;
+  padding-left: 21px;
+  padding-top: 26px;
+}
+#color-picker {
+  fill: #FFFF;
+  z-index: 3;
+  width: 10px !important;
+  height: 10px;
+  position: relative;
+  margin-top: 32%;
+  margin-left: 35%;
+}
+.menu{
+  display: none;
+}
+.container {
+  /* padding-right: 100px; */
+
+}
+.home-dot{
+  width: 80px;
+  height: 80px;
+  border-radius: 150px;
+  margin-top: 10px;
+  // float: right;
+  /* sets the postion of the blocks */
+  background-color: #202324;
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
+  border: 0;
+}
+.contact-dot{
+  width: 80px;
+  height: 80px;
+  border-radius: 150px;
+  margin-top: 10px;
+  /* sets the postion of the blocks */
+  background-color: #202324;
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
+  border: 0;
+}
+a.fill-div {
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+}
+.red,
+.blue {
+  /* sets the width and height off the 2 blocks */
+  width: 80px;
+  height: 80px;
+  border-radius: 150px;
+  /* sets the postion of the blocks */
+  // float: right;
+  background-color: #202324;
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
+  border: 0;
+}
+
+.red {
+  display: none;
+  //fixed issue because we have 3 divs and were tying to use float right it would not make all divs go underneath eachother
+  //The next 3 lines fix it and move just the red class up so that it is inline and ontop of the blue div
+  position: absolute;
+  top: 0;
+  right:0;
+  //------------
+  /* visibility: hidden; */
+  /* make this 2 to show colors */
+  // transform: translateX(98px);
+  background-color: #202324;
+  font-size: 0;
+  /* width: 430px; */
+  /* set to 100px */
+
+  transition: all 1.3s;
+  /* width100% with overflow makes the dots come from inside the dot and not the far right */
+  text-align: center;
+  /* width: 100%; */
+
+  visibility: hidden;
+
+  display: inline-flex;
+  overflow: hidden;
+}
+
+.color1,
+.color2,
+.color3,
+.color4,
+.color5 {
+  margin-top: 20px;
+}
+
+/* .colors { */
+/* width100% with overflow makes the bots come from inside the dot and not the far right */
+/* text-align: center; */
+/* width: 100%; */
+/* width: 0px;
+  visibility: hidden;
+  padding-top: 30px;
+  padding-left: 40px;
+  display: inline-flex;
+  overflow: hidden;
+} */
+
+.color1 {
+  /* margin-left moves all dots to the right */
+  margin-left: 30px;
+  outline: none !important;
+  visibility: initial;
+  height: 40px;
+  width: 40px;
+  /* opacity: 0; */
+  margin-right: 20px;
+  border-radius: 150px;
+  background-color: #FF4444;
+  display: block;
+}
+
+.color2 {
+  visibility: initial;
+  height: 40px;
+  width: 40px;
+  /* opacity: 0; */
+  margin-right: 20px;
+  border-radius: 150px;
+  background-color: #00BFFF;
+  display: block;
+}
+
+.color3 {
+  visibility: initial;
+  height: 40px;
+  width: 40px;
+  /* opacity: 0; */
+  margin-right: 20px;
+  border-radius: 150px;
+  background-color: #08FF00;
+  display: block;
+}
+
+.color4 {
+  border-radius: 150px;
+  visibility: initial;
+  height: 40px;
+  width: 40px;
+  /* opacity: 0; */
+  margin-right: 20px;
+  background-color: #FF893A;
+  display: block;
+}
+
+.color5 {
+  /* visibility: initial; */
+  height: 40px;
+  width: 40px;
+  /* opacity: 0; */
+  margin-right: 50px;
+  border-radius: 150px;
+  background-color: #003CFF;
+}
+
+/* .blue:hover + .red {
+  width: 430px;
+} */
+.red:hover~.red {
+  width: 430px !important;
+}
+
+.red:hover {
+  visibility: initial;
+  width: 430px;
+
+}
+
+.blue:hover~.red {
+  visibility: initial;
+  width: 430px;
+
+}
+
+/* .red:hover .colors {
+  visibility: initial;
+  width: 100%;
+  
+}
+
+.blue:hover~.red .colors {
+  visibility: initial;
+  width: 100%;
+  
+} */
+
+.blue:hover~.red .color1 {
+  visibility: initial;
+  opacity: 1;
+  /* transition: opacity 5s; */
+}
+
+.red:hover .color1 {
+  visibility: initial;
+  opacity: 1;
+  /* transition: opacity 5s; */
+}
+
+.blue:hover~.red .color2 {
+  /* visibility: initial; */
+  /* opacity: 1; */
+  /* transition: opacity 5s; */
+}
+
+.red:hover .color2 {
+  /* visibility: initial; */
+  /* opacity: 1; */
+  /* transition: opacity 5s; */
+}
+
+.blue:hover~.red .color3 {
+  visibility: initial;
+  opacity: 1;
+  /* transition: opacity 5s; */
+}
+
+.red:hover .color3 {
+  visibility: initial;
+  opacity: 1;
+  /* transition: opacity 5s; */
+}
+
+.blue:hover~.red .color4 {
+  visibility: initial;
+  opacity: 1;
+  /* transition: opacity 5s; */
+}
+
+.red:hover .color4 {
+  visibility: initial;
+  opacity: 1;
+  /* transition: opacity 5s; */
+}
+
+.blue:hover~.red .color5 {
+  visibility: initial;
+  opacity: 1;
+  /* transition: opacity 5s; */
+}
+
+.red:hover .color5 {
+  visibility: initial;
+  opacity: 1;
+  /* transition: opacity 5s; */
+}
+
+.app-style-class {
+
+  border: 5px solid white;
+  box-sizing: border-box;
+}
+
 * {
   margin: 0;
   padding: 0;
-  //box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
 }
-
-p{
-  position: relative;
-  z-index: 3;
-  color: #999999;
-  float: right;
-  padding-top: 42px;
-  padding-right: 80px;
-  font-size: 12px;
-  font-family: 'Montserrat', sans-serif;
-}
-.desktop-nav-links li , .divider{
-  display: none;
- }
-
- nav {
+//whole nav bar area
+nav {
   height: 100px;
- // background: #5b78c7;
 }
-
+//------------
+//stewartclay
+.logo{
+  position: fixed;
+  padding-top: 30px;
+  padding-left: 35px;
+  font-size: 22px;
+  color: #ffff;
+  font: bold;
+}
+.logo-clay{
+  color: #FF893A;
+}
+//------------
 .nav-links {
   display: flex;
   list-style: none;
@@ -32,7 +348,6 @@ p{
   justify-content: space-around;
   align-items: center;
   margin-left: auto;
-
 }
 
 .nav-links li a {
@@ -40,31 +355,9 @@ p{
   text-decoration: none;
   font-size: 16px;
 }
-  //logo
-  .logo{
-    position: absolute;
-    //display: none;
-    z-index: 5;
-    padding-top: 30px;
-    margin-left: 30px;
-    width: 28px;
-  }
-
-  .landing {
-    // height: 90vh;
-     //display: flex;
-    // justify-content: center;
-    // align-items: center;
-   }
-   .landing h1 {
-    //margin: 100px;
-   // font-size: 50px;
-   // color: #ae5fce;
-  }
-
   .line {
     height: 3px;
-    background-color: rgb(161, 65, 0);
+    background-color: rgb(255, 255, 255);
     margin: 5px;
     transition:  all cubic-bezier(0.26, 1.0, 0.27, 1.55) 0.35s;
   }
@@ -80,18 +373,18 @@ p{
 width: 25px;
 //float: right;
 }
-
-nav {
-  position: relative;
-}
+  //CAUSES an issue with the color picker
+// nav {
+//   position: relative;
+// }
 
 .hamburger {
   z-index: 3;
   position: absolute;
   cursor: pointer;
-  right: 30px;
-  top: 50%;
-  transform: translate(-5%, -50%);
+  right: 24px;
+  padding-top: 27.0px;
+  //transform: translate(-5%, -50%);
 }
 
 .nav-links {
@@ -166,149 +459,21 @@ nav {
 li.fade {
   opacity: 1;
 }
-hr{
-  display: none;
-  width: 50px;
-  //margin:0 0;
-  border:1px solid rgb(161, 65, 0);
-}
+// hr{
+//   display: none;
+//   width: 50px;
+//   //margin:0 0;
+//   border:1px solid rgb(161, 65, 0);
+// }
 
-@media screen and (min-width: 600px) {
-
-  li a::after{
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    background: #FF893A;
-    transition: width .3s;
-  }
-  .desktop-nav-links, li a:hover::after{
-    width: 100%;
-    transition: width .3s;
-  }
-    p{
-      display: none;
-    }
-  .logo{
-    position: relative;
-    //display: none;
-    z-index: 5;
-    padding-top: unset;
-    margin-left: unset;
-    width: unset;
-  }
-
+@media screen and (min-width: 930px) {
   .hamburger , .nav-links{
     display: none;
 }
-.desktop-nav-links li{
- // display: block;
- display: inline-block;
- }
- .desktop-nav-links{
-  display: -webkit-box;
-  padding-top: 20px;
-  //display: flex;
-   justify-content: center;
-   list-style: none;
-   //width: 50%;
-   width: 100%;
-   height: 100%;
-  //justify-content: space-around;
-   align-items: center;
-   margin-left: auto;
- }
- .desktop-nav-links, li a {
-   font-family: 'Montserrat', sans-serif;
-   
-   letter-spacing: 2px;
-   color: #999999;
-   text-decoration: none;
-   font-size: 16px;
-   //padding: 20px;
- }
- .desktop-nav-links li:nth-child(2)
- {
-  margin-right: 20px;
- }
- .desktop-nav-links li:nth-child(3)
- {
-  margin-left: 20px;
-  margin-right: 20px;
- }
- .desktop-nav-links li:nth-child(5)
- {
-  margin-left: 20px;
-  margin-right: 20px;
- }
- .desktop-nav-links li:nth-child(6)
- {
-  margin-left: 20px;
- }
- //.menu-item-1{
- //  padding-left: 0px;
- //}
- //.menu-item-2{
-  // padding-right: 0px;
- //}
-// .desktop-nav-links a:hover {
- // color: #FF893A;
- // -webkit-transition: all 0.6s ease-in-out;
- // -o-transition: all 0.6s ease-in-out;
-//  -ms-transition: all 0.6s ease-in-out;
-///  -moz-transition: all 0.6s ease-in-out;
-//  transition: all 0.6s ease-in-out;
-  
-//}
-.desktop-nav-links a::before{
-  //content: '';
- // display: block;
-  //position: absolute;
- // left: 0;
- // bottom: 0;
- // height: 8px;
- // width: 0;
-  //transition: width 0s ease, background .5s ease;
+.menu{
+  display: block;
 }
-
-//   .desktop-nav-links a::after{
-//     content: '';
-//     display: block;
-//     position: absolute;
-//     right: 0;
-//     bottom: 0;
-//     height: 8px;
-//     width: 0;
-//     background: #3366FF;
-//     transition: width .5s ease;
-//   }
-//   .desktop-nav-links a:hover:before {
-//     width: 10%;
-//     background: #3366FF;
-//     transition: width .5s ease;
-// }
-// .desktop-nav-links a:hover:after {
-//     width: 100%;
-//     background: transparent;
-//     transition: all 0s ease;
-// }
 }
 
 
-@media screen and (min-width: 790px) {
-hr{
-  display: -webkit-box;
-}
-.desktop-nav-links li:nth-child(2)
-{
- margin-left: 20px;
-}
-.desktop-nav-links li:nth-child(6)
-{
- margin-right: 20px;
-}
-}
-@media screen and (min-width: 900px) {
 
-}

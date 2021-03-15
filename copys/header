@@ -1,58 +1,30 @@
 <!DOCTYPE html>
+<html lang="en">
 <html>
     <head>
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
         <link rel='stylesheet' type='text/css' media='screen' href='css/header/header.css'>
-        <script src="javaScript/header/home.js"></script>
+        <script src="javaScript/header/header.js"></script>
     </head>
     <body>
-        
+      <h1 class="logo">STEWART<span class="logo-clay">CLAY</span></h1>
         <nav>
-
-          <div class="menu-wrapper">
-            <div class="hamburger-menu"></div>	  
-          </div>
-            <div class="container">
-                <div class="stick stick-1"></div>
-                <div class="stick stick-2"></div>
-                <div class="stick stick-3"></div>
-              </div>
-          <ul class="nav-links">
-              <hr style="width: 100px; border:1px solid #FF893A;"/>   
-              <li><a href="#">MY STORY</a></li>
+        <div class="navgation">          
+              <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <!--mobile view-->
+            <ul class="nav-links">
+              <li><a href="index.html">MY STORY</a></li>
               <li><a href="#">PROJECTS</a></li>
-              <div class="logo-div">
-              <img class="logo" src="images/header/Logo.svg" alt="logo">
-              </div>
               <li><a href="#">INSPIRATION</a></li>
-              <li><a href="#">CONTACT</a></li>
-              <hr style="width: 100px; border:1px solid #FF893A;"/> 
+              <li><a href="contact.html">CONTACT</a></li>
             </ul>
           </nav>
-        
-     <script>
-const hamburger = document.querySelector(".menu-wrapper");
-const navLinks = document.querySelector(".nav-links");
-const links = document.querySelectorAll(".nav-links li");
-
-hamburger.addEventListener("click", () => {
-  navLinks.classList.toggle("open");
-  links.forEach(link => {
-    link.classList.toggle("fade");
-  });
-});
-    </script>
-
-
+        </div>
     </body>
 </html>
 
- <!---->
 
-
-
-
- (function () {
-	$('.menu-wrapper').on('click', function() {
-		$('.hamburger-menu').toggleClass('animate');
-	})
-})();

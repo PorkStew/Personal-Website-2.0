@@ -1,4 +1,151 @@
-body {
-  background-color: #151515;
+.contact-dot {
+  background-color: #FF893A !important;
+}
+
+body, html {
+  background: #151515;
+  height: 100%;
+  -webkit-animation: trasitionIn 0.75s;
+          animation: trasitionIn 0.75s;
+}
+
+@-webkit-keyframes trasitionIn {
+  from {
+    opacity: 0;
+    -webkit-transform: rotateX(-10deg);
+            transform: rotateX(-10deg);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+  }
+}
+
+@keyframes trasitionIn {
+  from {
+    opacity: 0;
+    -webkit-transform: rotateX(-10deg);
+            transform: rotateX(-10deg);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+  }
+}
+
+* {
+  font-family: montserrat, sans-serif;
+}
+
+.contactMe {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  color: #FFFF;
+}
+
+hr {
+  border: 1px solid #FF893A;
+  width: 150px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.letsExplore {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+  padding-left: 36px;
+  padding-right: 36px;
+  padding-bottom: 40px;
+  color: #A1A1A1;
+}
+
+form {
+  margin: auto;
+  text-align: center;
+  /* width: 300px; */
+}
+
+.contact-form {
+  text-align: center;
+}
+
+/*Must include type="text" in HTML*/
+.name {
+  width: 65%;
+  max-width: 700px;
+  height: 60px;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background: #1E1E1E;
+  color: #FFFF;
+  -webkit-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
+  border: 0;
+}
+
+.email, .message {
+  width: 65%;
+  max-width: 700px;
+  height: 60px;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  margin-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background: #1E1E1E;
+  color: #FFFF;
+  -webkit-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
+  border: 0;
+}
+
+.message {
+  height: 216px;
+  padding-top: 29px;
+}
+
+input:focus {
+  outline: none !important;
+}
+
+textarea:focus {
+  outline: none !important;
+}
+
+.submitBtn {
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin: auto;
+  display: block;
+  margin-top: 30px;
+  width: 230px;
+  height: 48px;
+  border-radius: 10px;
+  color: #FFFF;
+  background: #FF893A;
+  -webkit-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
+  border: 0;
+}
+
+@media screen and (min-width: 520px) {
+  .contactMe {
+    font-size: 72.81px;
+  }
+  hr {
+    width: 278px;
+  }
 }
 /*# sourceMappingURL=contact.css.map */

@@ -1,26 +1,312 @@
+.menu {
+  position: fixed;
+  right: 50px;
+  top: 40%;
+}
+
+.blue {
+  position: relative;
+  z-index: 2;
+  /* this takes the 2 divs and makes them one so its one line
+  to see this change the red color and blue while removing transform */
+  /* transform: translateX(-25px); */
+}
+
+.color-picker-svg {
+  width: 32px;
+  padding-left: 24px;
+  padding-top: 22px;
+}
+
+.home-svg {
+  width: 37px;
+  height: 27px;
+  padding-left: 21px;
+  padding-top: 26px;
+}
+
+.chatting-svg {
+  width: 37px;
+  height: 27px;
+  padding-left: 21px;
+  padding-top: 26px;
+}
+
+#color-picker {
+  fill: #FFFF;
+  z-index: 3;
+  width: 10px !important;
+  height: 10px;
+  position: relative;
+  margin-top: 32%;
+  margin-left: 35%;
+}
+
+.menu {
+  display: none;
+}
+
+.container {
+  /* padding-right: 100px; */
+}
+
+.home-dot {
+  width: 80px;
+  height: 80px;
+  border-radius: 150px;
+  margin-top: 10px;
+  /* sets the postion of the blocks */
+  background-color: #202324;
+  -webkit-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
+  border: 0;
+}
+
+.contact-dot {
+  width: 80px;
+  height: 80px;
+  border-radius: 150px;
+  margin-top: 10px;
+  /* sets the postion of the blocks */
+  background-color: #202324;
+  -webkit-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
+  border: 0;
+}
+
+a.fill-div {
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+}
+
+.red,
+.blue {
+  /* sets the width and height off the 2 blocks */
+  width: 80px;
+  height: 80px;
+  border-radius: 150px;
+  /* sets the postion of the blocks */
+  background-color: #202324;
+  -webkit-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
+  border: 0;
+}
+
+.red {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  /* visibility: hidden; */
+  /* make this 2 to show colors */
+  background-color: #202324;
+  font-size: 0;
+  /* width: 430px; */
+  /* set to 100px */
+  -webkit-transition: all 1.3s;
+  transition: all 1.3s;
+  /* width100% with overflow makes the dots come from inside the dot and not the far right */
+  text-align: center;
+  /* width: 100%; */
+  visibility: hidden;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  overflow: hidden;
+}
+
+.color1,
+.color2,
+.color3,
+.color4,
+.color5 {
+  margin-top: 20px;
+}
+
+/* .colors { */
+/* width100% with overflow makes the bots come from inside the dot and not the far right */
+/* text-align: center; */
+/* width: 100%; */
+/* width: 0px;
+  visibility: hidden;
+  padding-top: 30px;
+  padding-left: 40px;
+  display: inline-flex;
+  overflow: hidden;
+} */
+.color1 {
+  /* margin-left moves all dots to the right */
+  margin-left: 30px;
+  outline: none !important;
+  visibility: initial;
+  height: 40px;
+  width: 40px;
+  /* opacity: 0; */
+  margin-right: 20px;
+  border-radius: 150px;
+  background-color: #FF4444;
+  display: block;
+}
+
+.color2 {
+  visibility: initial;
+  height: 40px;
+  width: 40px;
+  /* opacity: 0; */
+  margin-right: 20px;
+  border-radius: 150px;
+  background-color: #00BFFF;
+  display: block;
+}
+
+.color3 {
+  visibility: initial;
+  height: 40px;
+  width: 40px;
+  /* opacity: 0; */
+  margin-right: 20px;
+  border-radius: 150px;
+  background-color: #08FF00;
+  display: block;
+}
+
+.color4 {
+  border-radius: 150px;
+  visibility: initial;
+  height: 40px;
+  width: 40px;
+  /* opacity: 0; */
+  margin-right: 20px;
+  background-color: #FF893A;
+  display: block;
+}
+
+.color5 {
+  /* visibility: initial; */
+  height: 40px;
+  width: 40px;
+  /* opacity: 0; */
+  margin-right: 50px;
+  border-radius: 150px;
+  background-color: #003CFF;
+}
+
+/* .blue:hover + .red {
+  width: 430px;
+} */
+.red:hover ~ .red {
+  width: 430px !important;
+}
+
+.red:hover {
+  visibility: initial;
+  width: 430px;
+}
+
+.blue:hover ~ .red {
+  visibility: initial;
+  width: 430px;
+}
+
+/* .red:hover .colors {
+  visibility: initial;
+  width: 100%;
+  
+}
+
+.blue:hover~.red .colors {
+  visibility: initial;
+  width: 100%;
+  
+} */
+.blue:hover ~ .red .color1 {
+  visibility: initial;
+  opacity: 1;
+  /* transition: opacity 5s; */
+}
+
+.red:hover .color1 {
+  visibility: initial;
+  opacity: 1;
+  /* transition: opacity 5s; */
+}
+
+.blue:hover ~ .red .color2 {
+  /* visibility: initial; */
+  /* opacity: 1; */
+  /* transition: opacity 5s; */
+}
+
+.red:hover .color2 {
+  /* visibility: initial; */
+  /* opacity: 1; */
+  /* transition: opacity 5s; */
+}
+
+.blue:hover ~ .red .color3 {
+  visibility: initial;
+  opacity: 1;
+  /* transition: opacity 5s; */
+}
+
+.red:hover .color3 {
+  visibility: initial;
+  opacity: 1;
+  /* transition: opacity 5s; */
+}
+
+.blue:hover ~ .red .color4 {
+  visibility: initial;
+  opacity: 1;
+  /* transition: opacity 5s; */
+}
+
+.red:hover .color4 {
+  visibility: initial;
+  opacity: 1;
+  /* transition: opacity 5s; */
+}
+
+.blue:hover ~ .red .color5 {
+  visibility: initial;
+  opacity: 1;
+  /* transition: opacity 5s; */
+}
+
+.red:hover .color5 {
+  visibility: initial;
+  opacity: 1;
+  /* transition: opacity 5s; */
+}
+
+.app-style-class {
+  border: 5px solid white;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
-}
-
-p {
-  position: relative;
-  z-index: 3;
-  color: #999999;
-  float: right;
-  padding-top: 42px;
-  padding-right: 80px;
-  font-size: 12px;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.desktop-nav-links li, .divider {
-  display: none;
 }
 
 nav {
   height: 100px;
+}
+
+.logo {
+  position: fixed;
+  padding-top: 30px;
+  padding-left: 35px;
+  font-size: 22px;
+  color: #ffff;
+  font: bold;
+}
+
+.logo-clay {
+  color: #FF893A;
 }
 
 .nav-links {
@@ -44,17 +330,9 @@ nav {
   font-size: 16px;
 }
 
-.logo {
-  position: absolute;
-  z-index: 5;
-  padding-top: 30px;
-  margin-left: 30px;
-  width: 28px;
-}
-
 .line {
   height: 3px;
-  background-color: #a14100;
+  background-color: white;
   margin: 5px;
   -webkit-transition: all cubic-bezier(0.26, 1, 0.27, 1.55) 0.35s;
   transition: all cubic-bezier(0.26, 1, 0.27, 1.55) 0.35s;
@@ -72,18 +350,12 @@ nav {
   width: 25px;
 }
 
-nav {
-  position: relative;
-}
-
 .hamburger {
   z-index: 3;
   position: absolute;
   cursor: pointer;
-  right: 30px;
-  top: 50%;
-  -webkit-transform: translate(-5%, -50%);
-          transform: translate(-5%, -50%);
+  right: 24px;
+  padding-top: 27.0px;
 }
 
 .nav-links {
@@ -177,89 +449,12 @@ li.fade {
   opacity: 1;
 }
 
-hr {
-  display: none;
-  width: 50px;
-  border: 1px solid #a14100;
-}
-
-@media screen and (min-width: 600px) {
-  li a::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    background: #FF893A;
-    -webkit-transition: width .3s;
-    transition: width .3s;
-  }
-  .desktop-nav-links, li a:hover::after {
-    width: 100%;
-    -webkit-transition: width .3s;
-    transition: width .3s;
-  }
-  p {
-    display: none;
-  }
-  .logo {
-    position: relative;
-    z-index: 5;
-    padding-top: unset;
-    margin-left: unset;
-    width: unset;
-  }
+@media screen and (min-width: 930px) {
   .hamburger, .nav-links {
     display: none;
   }
-  .desktop-nav-links li {
-    display: inline-block;
-  }
-  .desktop-nav-links {
-    display: -webkit-box;
-    padding-top: 20px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    list-style: none;
-    width: 100%;
-    height: 100%;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-left: auto;
-  }
-  .desktop-nav-links, li a {
-    font-family: 'Montserrat', sans-serif;
-    letter-spacing: 2px;
-    color: #999999;
-    text-decoration: none;
-    font-size: 16px;
-  }
-  .desktop-nav-links li:nth-child(2) {
-    margin-right: 20px;
-  }
-  .desktop-nav-links li:nth-child(3) {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  .desktop-nav-links li:nth-child(5) {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  .desktop-nav-links li:nth-child(6) {
-    margin-left: 20px;
-  }
-}
-
-@media screen and (min-width: 790px) {
-  hr {
-    display: -webkit-box;
-  }
-  .desktop-nav-links li:nth-child(2) {
-    margin-left: 20px;
-  }
-  .desktop-nav-links li:nth-child(6) {
-    margin-right: 20px;
+  .menu {
+    display: block;
   }
 }
 /*# sourceMappingURL=header.css.map */

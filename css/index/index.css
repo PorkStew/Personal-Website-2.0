@@ -1,399 +1,89 @@
+.home-dot {
+  background-color: #FF893A !important;
+}
+
 body, html {
+  background: #151515;
   height: 100%;
-  margin: 0;
+  -webkit-animation: trasitionIn 0.75s;
+          animation: trasitionIn 0.75s;
 }
 
-.img {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../../images/index/sukant-sharma-oCGLfr7GSPk-unsplash.jpg") no-repeat center center fixed;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../images/index/sukant-sharma-oCGLfr7GSPk-unsplash.jpg") no-repeat center center fixed;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  width: 100%;
+@-webkit-keyframes trasitionIn {
+  from {
+    opacity: 0;
+    -webkit-transform: rotateX(-10deg);
+            transform: rotateX(-10deg);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+  }
 }
 
-section {
-  height: 600px;
-  background-color: #1A222F;
+@keyframes trasitionIn {
+  from {
+    opacity: 0;
+    -webkit-transform: rotateX(-10deg);
+            transform: rotateX(-10deg);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+  }
 }
 
-.welcome {
-  text-align: center;
-  padding-left: 5%;
-  padding-top: 30px;
-  color: #999999;
+* {
+  font-family: montserrat, sans-serif;
 }
 
-.h1-hello {
-  font-size: 40px;
-}
-
-.h1-hello hr {
-  font-size: 45px;
-  margin-bottom: 6px;
-  display: inline-block;
-  border: 1px;
-  height: 2px;
-  background-color: #FF893A;
-  width: 100px;
-}
-
-.h2-i {
-  font-size: 30px;
-}
-
-.h3-coding {
+.hi-there {
   font-size: 20px;
-}
-
-.hire-me {
-  width: 100px;
-  height: 100px;
-}
-
-.buttons {
-  padding-top: 20px;
-}
-
-.custom-btn {
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
-  background: transparent;
-  outline: none !important;
-  cursor: pointer;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  position: relative;
-  display: inline-block;
-  color: #999999;
+  padding-top: 20%;
+  padding-left: 9%;
+  color: #ffff;
 }
 
-/**** BTN No. 4 ****/
-.btn-4 {
-  width: 130px;
-  height: 40px;
-  line-height: 42px;
-  padding: 0;
-  border: none;
+.im-stewart-clay {
+  font-size: 24px;
+  font-weight: 700;
+  padding-left: 9.8%;
+  color: #fff;
 }
 
-.btn-4 span {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 100%;
+.stewart-clay {
+  color: #FF893A;
 }
 
-.btn-4:before,
-.btn-4:after {
-  position: absolute;
-  content: "";
-  right: 0;
-  top: 0;
-  background: #FF893A;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+.about-me {
+  font-size: 16px;
+  font-weight: lighter;
+  letter-spacing: 1.08px;
+  width: 269px;
+  color: #ffff;
 }
 
-.btn-4:before {
-  height: 50%;
-  width: 2px;
+body {
+  background: url("/images/index/diagonal-rectangle.svg") no-repeat;
+  background-size: cover;
+  height: 590px;
 }
 
-.btn-4:after {
-  width: 20%;
-  height: 2px;
-}
-
-.btn-4:hover:before {
-  height: 100%;
-}
-
-.btn-4:hover:after {
-  width: 100%;
-}
-
-.btn-4 span:before,
-.btn-4 span:after {
-  position: absolute;
-  content: "";
-  left: 0;
-  bottom: 0;
-  background: #FF893A;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-.btn-4 span:before {
-  width: 2px;
-  height: 50%;
-}
-
-.btn-4 span:after {
-  width: 20%;
-  height: 2px;
-}
-
-.btn-4 span:hover:before {
-  height: 100%;
-}
-
-.btn-4 span:hover:after {
-  width: 100%;
-}
-
-/**** BTN No. 5 ****/
-.btn-5 {
-  margin-left: 20px;
-  width: 130px;
-  height: 40px;
-  line-height: 42px;
-  padding: 0;
-  border: none;
-}
-
-.btn-5 span {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-.btn-5:before,
-.btn-5:after {
-  position: absolute;
-  content: "";
-  right: 0;
-  bottom: 0;
-  background: #FF893A;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-.btn-5:before {
-  height: 50%;
-  width: 2px;
-}
-
-.btn-5:after {
-  width: 20%;
-  height: 2px;
-}
-
-.btn-5:hover:before {
-  height: 100%;
-}
-
-.btn-5:hover:after {
-  width: 100%;
-}
-
-.btn-5 span:before,
-.btn-5 span:after {
-  position: absolute;
-  content: "";
-  left: 0;
-  top: 0;
-  background: #FF893A;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-.btn-5 span:before {
-  width: 2px;
-  height: 50%;
-}
-
-.btn-5 span:after {
-  width: 20%;
-  height: 2px;
-}
-
-.btn-5 span:hover:before {
-  height: 100%;
-}
-
-.btn-5 span:hover:after {
-  width: 100%;
-}
-
-@media (min-width: 420px) {
-  .welcome {
-    text-align: left;
+@media screen and (min-width: 950px) {
+  body {
+    height: 100%  !important;
   }
-}
-
-@media (min-width: 862px) {
-  .welcome {
-    padding-left: 10%;
-    padding-top: 300px;
-    color: #999999;
+  .hi-there {
+    font-size: 22px;
+    padding-top: 20%;
+    padding-left: 21%;
   }
-  .h1-hello {
-    font-size: 70px;
-  }
-  .h1-hello hr {
-    font-size: 45px;
-    margin-bottom: 6px;
-    display: inline-block;
-    border: 1px;
-    height: 2px;
-    background-color: #FF893A;
-    width: 200px;
-  }
-  .h2-i {
-    font-size: 50px;
-  }
-  .h3-coding {
-    font-style: 50px;
-  }
-  .hire-me {
-    width: 100px;
-    height: 100px;
-  }
-  .buttons {
-    padding-top: 20px;
-  }
-  .custom-btn {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    background: transparent;
-    outline: none !important;
-    cursor: pointer;
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-    position: relative;
-    display: inline-block;
-    color: #999999;
-  }
-  /**** BTN No. 4 ****/
-  .btn-4 {
-    width: 130px;
-    height: 40px;
-    line-height: 42px;
-    padding: 0;
-    border: none;
-  }
-  .btn-4 span {
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 100%;
-  }
-  .btn-4:before,
-  .btn-4:after {
-    position: absolute;
-    content: "";
-    right: 0;
-    top: 0;
-    background: #FF893A;
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-  }
-  .btn-4:before {
-    height: 50%;
-    width: 2px;
-  }
-  .btn-4:after {
-    width: 20%;
-    height: 2px;
-  }
-  .btn-4:hover:before {
-    height: 100%;
-  }
-  .btn-4:hover:after {
-    width: 100%;
-  }
-  .btn-4 span:before,
-  .btn-4 span:after {
-    position: absolute;
-    content: "";
-    left: 0;
-    bottom: 0;
-    background: #FF893A;
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-  }
-  .btn-4 span:before {
-    width: 2px;
-    height: 50%;
-  }
-  .btn-4 span:after {
-    width: 20%;
-    height: 2px;
-  }
-  .btn-4 span:hover:before {
-    height: 100%;
-  }
-  .btn-4 span:hover:after {
-    width: 100%;
-  }
-  /**** BTN No. 5 ****/
-  .btn-5 {
-    margin-left: 20px;
-    width: 130px;
-    height: 40px;
-    line-height: 42px;
-    padding: 0;
-    border: none;
-  }
-  .btn-5 span {
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 100%;
-  }
-  .btn-5:before,
-  .btn-5:after {
-    position: absolute;
-    content: "";
-    right: 0;
-    bottom: 0;
-    background: #FF893A;
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-  }
-  .btn-5:before {
-    height: 50%;
-    width: 2px;
-  }
-  .btn-5:after {
-    width: 20%;
-    height: 2px;
-  }
-  .btn-5:hover:before {
-    height: 100%;
-  }
-  .btn-5:hover:after {
-    width: 100%;
-  }
-  .btn-5 span:before,
-  .btn-5 span:after {
-    position: absolute;
-    content: "";
-    left: 0;
-    top: 0;
-    background: #FF893A;
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-  }
-  .btn-5 span:before {
-    width: 2px;
-    height: 50%;
-  }
-  .btn-5 span:after {
-    width: 20%;
-    height: 2px;
-  }
-  .btn-5 span:hover:before {
-    height: 100%;
-  }
-  .btn-5 span:hover:after {
-    width: 100%;
+  .im-stewart-clay {
+    font-size: 72.81px;
+    padding-left: 20.8%;
   }
 }
 /*# sourceMappingURL=index.css.map */

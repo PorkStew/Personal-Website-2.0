@@ -7,6 +7,8 @@ body, html {
   height: 100%;
   -webkit-animation: trasitionIn 0.75s;
           animation: trasitionIn 0.75s;
+  padding: 0;
+  margin: 0;
 }
 
 @-webkit-keyframes trasitionIn {
@@ -39,18 +41,31 @@ body, html {
   font-family: montserrat, sans-serif;
 }
 
+body {
+  background-color: #151515;
+  background-image: -webkit-linear-gradient(116deg, #ffffff00 50%, #262626 50%);
+}
+
+.img {
+  width: 100%;
+}
+
+.welcome {
+  text-align: center;
+  top: 30%;
+}
+
 .hi-there {
   font-size: 20px;
   font-weight: 500;
-  padding-top: 20%;
-  padding-left: 9%;
+  margin-bottom: 7px;
   color: #ffff;
 }
 
 .im-stewart-clay {
   font-size: 24px;
   font-weight: 700;
-  padding-left: 9.8%;
+  margin-bottom: 7px;
   color: #fff;
 }
 
@@ -62,28 +77,378 @@ body, html {
   font-size: 16px;
   font-weight: lighter;
   letter-spacing: 1.08px;
-  width: 269px;
+  max-width: 817px;
+  padding-left: 22px;
+  padding-right: 22px;
   color: #ffff;
 }
 
-body {
-  background: url("/images/index/diagonal-rectangle.svg") no-repeat;
-  background-size: cover;
-  height: 590px;
+.contactMeBtn {
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin: auto;
+  display: block;
+  margin-top: 50px;
+  width: 230px;
+  height: 48px;
+  border-radius: 10px;
+  color: #FFFF;
+  background: #FF893A;
+  -webkit-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
+  border: 0;
+  outline: none;
+}
+
+.resumeBtn {
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin: auto;
+  display: block;
+  margin-top: 30px;
+  width: 230px;
+  height: 48px;
+  border-radius: 10px;
+  color: #FFFF;
+  background: #FF893A;
+  -webkit-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
+  border: 0;
+  outline: none;
+}
+
+.index-social-links {
+  text-align: center;
+}
+
+.index-github-dot, .index-linkdin-dot, .index-hackerrank-dot, .index-email-dot {
+  text-align: center;
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  border-radius: 150px;
+  margin-top: 40px;
+  /* sets the postion of the blocks */
+  background-color: #202324;
+  -webkit-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
+  border: 0;
+}
+
+.index-linkdin-dot {
+  margin-left: 10px;
+}
+
+.index-hackerrank-dot {
+  margin-left: 10px;
+}
+
+.index-github-svg {
+  margin-top: 17px;
+}
+
+.index-linkedin-svg {
+  margin-top: 17px;
+}
+
+.index-hackerrank-svg {
+  margin-top: 17px;
+}
+
+.port {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  padding-top: 500px;
+  color: #fff;
+}
+
+.project-1 {
+  max-width: 275px;
+  margin: auto;
+  padding-top: 40px;
+}
+
+.topShotTimer {
+  height: 100%;
+}
+
+.logo-project-1 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 65%;
+          flex: 0 0 65%;
+  width: 100%;
+  height: 193px;
+  text-align: center;
+  background: #283739;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.about-project-1 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  width: 100%;
+  height: 624px;
+  background: #262626;
+}
+
+.about-project-1 h1 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 0px;
+  padding-top: 30px;
+  color: #fff;
+}
+
+.about-project-1 p {
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.64;
+  color: #fff;
+  line-height: 32px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.about-project-1 .viewProjectBtn {
+  text-align: center;
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: auto;
+  display: block;
+  margin-top: 20px;
+  width: 160px;
+  height: 38px;
+  border-radius: 5px;
+  color: #FFFF;
+  background: #2EA44F;
+  border: 0;
+  outline: none;
+}
+
+.about-project-1 .githubBtn {
+  margin-top: 20px;
+  margin: auto;
+  text-align: center;
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: auto;
+  display: block;
+  margin-top: 20px;
+  width: 107px;
+  height: 38px;
+  border-radius: 5px;
+  color: #000;
+  background: #FFFF;
+  border: 0;
+  outline: none;
+}
+
+.about-project-1 .flutterBtn {
+  margin-top: 20px;
+  text-align: center;
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin: auto;
+  display: block;
+  margin-top: 20px;
+  width: 94px;
+  height: 32px;
+  border-radius: 5px;
+  color: #FFFF;
+  background: #6A6A6A;
+  border: 0;
+  outline: none;
+}
+
+.about-project-1 .cssBtn {
+  text-align: center;
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin: auto;
+  display: block;
+  margin-top: 20px;
+  width: 51px;
+  height: 32px;
+  border-radius: 5px;
+  color: #FFFF;
+  background: #6A6A6A;
+  border: 0;
+  outline: none;
+}
+
+.about-project-1 .androidBtn {
+  text-align: center;
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin: auto;
+  display: block;
+  margin-top: 20px;
+  width: 101px;
+  height: 32px;
+  border-radius: 5px;
+  color: #FFFF;
+  background: #6A6A6A;
+  border: 0;
+  outline: none;
+}
+
+.about-project-1 .iosBtn {
+  text-align: center;
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin: auto;
+  display: block;
+  margin-top: 20px;
+  width: 51px;
+  height: 32px;
+  border-radius: 5px;
+  color: #FFFF;
+  background: #6A6A6A;
+  border: 0;
+  outline: none;
+}
+
+.seeMore {
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin: auto;
+  display: block;
+  margin-top: 50px;
+  width: 275px;
+  height: 130px;
+  border-radius: 10px;
+  color: #fff;
+  background: #FF893A;
+  -webkit-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
+  border: 0;
+  outline: none;
+}
+
+@media screen and (min-width: 425px) {
+  .welcome {
+    text-align: left;
+    padding-left: 15%;
+  }
+  .welcome .about-me {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .welcome .contactMeBtn {
+    margin-left: 0;
+  }
+  .welcome .index-social-links {
+    text-align: left;
+  }
 }
 
 @media screen and (min-width: 950px) {
-  body {
-    height: 100%  !important;
+  .resumeBtn {
+    display: inline;
+    margin-left: 30px;
   }
   .hi-there {
     font-size: 22px;
-    padding-top: 20%;
-    padding-left: 21%;
+    text-align: left;
   }
   .im-stewart-clay {
     font-size: 72.81px;
-    padding-left: 20.8%;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .portfolio {
+    padding-left: 22px;
+    padding-right: 22px;
+    max-width: 1178px;
+    margin: auto;
+  }
+  .project-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .logo-project-1 {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    height: auto;
+    border-radius: 0px 15px 15px 0px;
+  }
+  .about-project-1 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 65%;
+            flex: 0 0 65%;
+    height: auto;
+    text-align: left;
+    padding-left: 45px;
+  }
+  .project-1 {
+    max-width: 1178px;
+  }
+  .about-project-1 {
+    height: auto;
+    padding-bottom: 45px;
+  }
+  .about-project-1 h1 {
+    text-align: left;
+  }
+  .about-project-1 p {
+    text-align: left;
+    max-width: 650px;
+  }
+  .about-project-1 .viewProjectBtn {
+    display: inline;
+    margin-top: 40px;
+  }
+  .about-project-1 .githubBtn {
+    margin-left: 20px;
+    display: inline;
+  }
+  .about-project-1 .flutterBtn {
+    margin-left: 50px;
+    display: inline;
+  }
+  .about-project-1 .cssBtn {
+    margin-left: 15px;
+    display: inline;
+  }
+  .about-project-1 .androidBtn {
+    margin-left: 15px;
+    display: inline;
+  }
+  .about-project-1 .iosBtn {
+    margin-left: 15px;
+    display: inline;
+  }
+  .img {
+    width: 100%;
+  }
+  .seeMore {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=index.css.map */

@@ -39,11 +39,10 @@ body, html {
 }
 
 .contactMe {
-  font-size: 40px;
+  font-size: 32px;
   font-weight: bold;
   text-align: center;
   color: #FFFF;
-  height: 100px;
 }
 
 hr {
@@ -138,9 +137,16 @@ textarea:focus {
   -webkit-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
           box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
   border: 0;
+  outline: none;
 }
 
-@media screen and (min-width: 520px) {
+@media screen and (min-width: 425px) {
+  .contactMe {
+    font-size: 45px;
+  }
+}
+
+@media screen and (min-width: 630px) {
   .contactMe {
     font-size: 72.81px;
   }

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stewart Clay</title>
+    <link class="shortcut-icon" rel="shortcut icon" href="images/header/Logo.svg" type="image/x-icon"/>
+    <link href="./css/index/index.css" rel="stylesheet" type="text/css" />
+    <!-- Calling footer and header -->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+        });
+        $(function () {
+            $("#footer").load("footer.html");
+        });
+    </script>
+</head>
+
+<body>
+    <div class="img">
+        <!-- Calling Header  -->
+        <div id="header">
+
+        </div>
+        <h2 class="hi-there">HI THERE!</h2>
+        <h1 class="im-stewart-clay">I'M <span class="stewart-clay">STEWART CLAY</span></h1>
+        <p class="about-me">
+            I'm a Tunisian based web 
+            designer & front‑end developer
+            focused on crafting clean & 
+            user‑friendly experiences, I am 
+            passionate about building 
+            excellent software that improves 
+            the lives of those around me.
+        </p>
+            <button class="contactMeBtn">CONTACT ME</button>
+            <button class="resumeBtn">RESUME</button>
+        <h1 class="port">PORTFOLIO</h1>
+        <!-- <hr class=""> -->
+        <div class="project-1">
+            <div class="logo-project-1">
+               
+            </div>
+            <div class="about-project-1">
+                <h1>TopShot Timer</h1>
+                <p>An app that allows for accurate records of shooters practicing their drills. While having record of current and previous strings shot on their profile.</p>
+                <button class="viewProjectBtn">VIEW PROJECT</button>
+                <button class="githubBtn">GITHUB</button>
+                <button>FLUTTER</button>
+                <button>CSS</button>
+                <button>ANDROID</button>
+                <button>IOS</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+    <!-- Calling footer  -->
+    <div id="footer">
+    </div>
+    <!---->
+</body>
+
+</html>

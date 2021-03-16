@@ -1,0 +1,27 @@
+<svg id="TopShot_Timer" data-name="TopShot Timer" xmlns="http://www.w3.org/2000/svg" width="177.364" height="177.364" viewBox="0 0 177.364 177.364">
+  <g id="Group_3" data-name="Group 3" transform="translate(30.896 30.896)">
+    <g id="Group_2" data-name="Group 2">
+      <path id="Path_3" data-name="Path 3" d="M146.973,89.187a57.786,57.786,0,1,0,57.786,57.786A57.85,57.85,0,0,0,146.973,89.187Zm0,104.13a46.344,46.344,0,1,1,46.344-46.344A46.4,46.4,0,0,1,146.973,193.317Z" transform="translate(-89.187 -89.187)" fill="#a2c13c"/>
+    </g>
+  </g>
+  <g id="Group_5" data-name="Group 5" transform="translate(82.961)">
+    <g id="Group_4" data-name="Group 4">
+      <path id="Path_4" data-name="Path 4" d="M245.205,0a5.721,5.721,0,0,0-5.721,5.721V62.554a5.721,5.721,0,0,0,11.443,0V5.721A5.721,5.721,0,0,0,245.205,0Z" transform="translate(-239.484)" fill="#a2c13c"/>
+    </g>
+  </g>
+  <g id="Group_7" data-name="Group 7" transform="translate(82.961 109.089)">
+    <g id="Group_6" data-name="Group 6">
+      <path id="Path_5" data-name="Path 5" d="M245.205,314.908a5.721,5.721,0,0,0-5.721,5.721v56.833a5.721,5.721,0,0,0,11.443,0V320.629A5.721,5.721,0,0,0,245.205,314.908Z" transform="translate(-239.484 -314.908)" fill="#a2c13c"/>
+    </g>
+  </g>
+  <g id="Group_9" data-name="Group 9" transform="translate(109.089 82.961)">
+    <g id="Group_8" data-name="Group 8">
+      <path id="Path_6" data-name="Path 6" d="M377.462,239.484H320.629a5.721,5.721,0,0,0,0,11.443h56.833a5.721,5.721,0,1,0,0-11.443Z" transform="translate(-314.908 -239.484)" fill="#a2c13c"/>
+    </g>
+  </g>
+  <g id="Group_11" data-name="Group 11" transform="translate(0 82.961)">
+    <g id="Group_10" data-name="Group 10">
+      <path id="Path_7" data-name="Path 7" d="M62.554,239.484H5.721a5.721,5.721,0,0,0,0,11.443H62.554a5.721,5.721,0,0,0,0-11.443Z" transform="translate(0 -239.484)" fill="#a2c13c"/>
+    </g>
+  </g>
+</svg>

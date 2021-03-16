@@ -50,6 +50,12 @@ colorButton.on("click", function () {
     $(".logo-clay").css("color", newColor);
     $(".submitBtn").css("background-color", newColor);
     $("hr").css("border-color", newColor);
+
+    //index.html
+    $(".stewart-clay").css("color", newColor);
+    $(".seeMore").css("background-color", newColor);
+    $(".contactMeBtn").css("background-color", newColor);
+    $(".resumeBtn").css("background-color", newColor);
 });
 
 const hamburger = document.querySelector(".hamburger");

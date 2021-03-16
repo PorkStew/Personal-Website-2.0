@@ -1,21 +1,28 @@
+html{
+    //NEED FOR FOOTER TO STAY AT BOTTOM OF PAGE
+    height: 100%;
+    //----------------
+}
+body{
+    //NEED FOR FOOTER TO STAY AT BOTTOM OF PAGE
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    //--------------------------
+}
+
 .containers{
     background: #1E1E1E;
-    width: 100%;
-   
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    margin: 0;
-  padding: 0;
     text-align: center;
+}
+#footer{
+    margin-top: auto;
 }
 .social-links{
   
 }
 .github-dot , .linkdin-dot, .hackerrank-dot, .email-dot{
     display: inline-block;
-    
-    margin: auto;
     width: 64px;
     height: 64px;
     border-radius: 150px;

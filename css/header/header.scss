@@ -47,7 +47,7 @@
 .color-picker-svg {
   width: 32px;
   padding-left: 24px;
-  padding-top: 22px;
+  padding-top: 20px;
 }
 .home-svg{
   width: 37px;
@@ -123,7 +123,8 @@ a.fill-div {
   //The next 3 lines fix it and move just the red class up so that it is inline and ontop of the blue div
   position: absolute;
   top: 0;
-  right:0;
+  //fixes issue that the white dot of selected color would show a little on the right of the color picker
+  right: 1px;
   //------------
   /* visibility: hidden; */
   /* make this 2 to show colors */
@@ -465,8 +466,8 @@ li.fade {
 //   //margin:0 0;
 //   border:1px solid rgb(161, 65, 0);
 // }
-
-@media screen and (min-width: 930px) {
+//930 plzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+@media screen and (min-width: 1200px) {
   .hamburger , .nav-links{
     display: none;
 }

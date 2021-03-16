@@ -15,7 +15,7 @@
 .color-picker-svg {
   width: 32px;
   padding-left: 24px;
-  padding-top: 22px;
+  padding-top: 20px;
 }
 
 .home-svg {
@@ -98,7 +98,7 @@ a.fill-div {
   display: none;
   position: absolute;
   top: 0;
-  right: 0;
+  right: 1px;
   /* visibility: hidden; */
   /* make this 2 to show colors */
   background-color: #202324;
@@ -449,7 +449,7 @@ li.fade {
   opacity: 1;
 }
 
-@media screen and (min-width: 930px) {
+@media screen and (min-width: 1200px) {
   .hamburger, .nav-links {
     display: none;
   }

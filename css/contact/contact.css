@@ -4,7 +4,6 @@
 
 body, html {
   background: #151515;
-  height: 100%;
   -webkit-animation: trasitionIn 0.75s;
           animation: trasitionIn 0.75s;
 }
@@ -44,6 +43,7 @@ body, html {
   font-weight: bold;
   text-align: center;
   color: #FFFF;
+  height: 100px;
 }
 
 hr {
@@ -69,7 +69,7 @@ hr {
 form {
   margin: auto;
   text-align: center;
-  /* width: 300px; */
+  max-width: 1100px;
 }
 
 .contact-form {

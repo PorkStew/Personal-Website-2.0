@@ -1,25 +1,457 @@
-.project-1{
-  padding-top: 40px;
-  padding-left: 22px;
-  padding-right: 22px;
+
+.menu{
+  //display: none;
+  position: fixed;
+  // float: right;
+    right: 50px;
+    top: 35%;
 }
-.logo-project-1{
+.blue {
+  position: relative;
+  z-index: 2;
+  /* this takes the 2 divs and makes them one so its one line
+  to see this change the red color and blue while removing transform */
+  /* transform: translateX(-25px); */
+}
+
+.color-picker-svg {
+  width: 32px;
+  padding-left: 24px;
+  padding-top: 20px;
+}
+.home-svg{
+  width: 37px;
+  height: 27px;
+  padding-left: 21px;
+  padding-top: 26px;
+}
+.chatting-svg{
+  width: 37px;
+  height: 27px;
+  padding-left: 21px;
+  padding-top: 26px;
+}
+#color-picker {
+  fill: #FFFF;
+  z-index: 3;
+  width: 10px !important;
+  height: 10px;
+  position: relative;
+  margin-top: 32%;
+  margin-left: 35%;
+}
+.menu{
+  display: none;
+}
+.container {
+  /* padding-right: 100px; */
+
+}
+.home-dot{
+  width: 80px;
+  height: 80px;
+  border-radius: 150px;
+  margin-top: 10px;
+  // float: right;
+  /* sets the postion of the blocks */
+  background-color: #202324;
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
+  border: 0;
+}
+.contact-dot{
+  width: 80px;
+  height: 80px;
+  border-radius: 150px;
+  margin-top: 10px;
+  /* sets the postion of the blocks */
+  background-color: #202324;
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
+  border: 0;
+}
+a.fill-div {
+  display: block;
+  height: 100%;
   width: 100%;
-  height: 193px;
-  background: #283739;
-  border-radius: 15px 15px 0px 0px;
+  text-decoration: none;
 }
-.about-project-1{
+.red,
+.blue {
+  /* sets the width and height off the 2 blocks */
+  width: 80px;
+  height: 80px;
+  border-radius: 150px;
+  /* sets the postion of the blocks */
+  // float: right;
+  background-color: #202324;
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
+  border: 0;
+}
+
+.red {
+  display: none;
+  //fixed issue because we have 3 divs and were tying to use float right it would not make all divs go underneath eachother
+  //The next 3 lines fix it and move just the red class up so that it is inline and ontop of the blue div
+  position: absolute;
+  top: 0;
+  //fixes issue that the white dot of selected color would show a little on the right of the color picker
+  right: 1px;
+  //------------
+  /* visibility: hidden; */
+  /* make this 2 to show colors */
+  // transform: translateX(98px);
+  background-color: #202324;
+  font-size: 0;
+  /* width: 430px; */
+  /* set to 100px */
+
+  transition: all 1.3s;
+  /* width100% with overflow makes the dots come from inside the dot and not the far right */
   text-align: center;
+  /* width: 100%; */
+
+  visibility: hidden;
+
+  display: inline-flex;
+  overflow: hidden;
+}
+
+.color1,
+.color2,
+.color3,
+.color4,
+.color5 {
+  margin-top: 20px;
+}
+
+/* .colors { */
+/* width100% with overflow makes the bots come from inside the dot and not the far right */
+/* text-align: center; */
+/* width: 100%; */
+/* width: 0px;
+  visibility: hidden;
+  padding-top: 30px;
+  padding-left: 40px;
+  display: inline-flex;
+  overflow: hidden;
+} */
+
+.color1 {
+  /* margin-left moves all dots to the right */
+  margin-left: 30px;
+  outline: none !important;
+  visibility: initial;
+  height: 40px;
+  width: 40px;
+  /* opacity: 0; */
+  margin-right: 20px;
+  border-radius: 150px;
+  background-color: #FF4444;
+  display: block;
+}
+
+.color2 {
+  visibility: initial;
+  height: 40px;
+  width: 40px;
+  /* opacity: 0; */
+  margin-right: 20px;
+  border-radius: 150px;
+  background-color: #00BFFF;
+  display: block;
+}
+
+.color3 {
+  visibility: initial;
+  height: 40px;
+  width: 40px;
+  /* opacity: 0; */
+  margin-right: 20px;
+  border-radius: 150px;
+  background-color: #08FF00;
+  display: block;
+}
+
+.color4 {
+  border-radius: 150px;
+  visibility: initial;
+  height: 40px;
+  width: 40px;
+  /* opacity: 0; */
+  margin-right: 20px;
+  background-color: #FF893A;
+  display: block;
+}
+
+.color5 {
+  /* visibility: initial; */
+  height: 40px;
+  width: 40px;
+  /* opacity: 0; */
+  margin-right: 50px;
+  border-radius: 150px;
+  background-color: #003CFF;
+}
+
+/* .blue:hover + .red {
+  width: 430px;
+} */
+.red:hover~.red {
+  width: 430px !important;
+}
+
+.red:hover {
+  visibility: initial;
+  width: 430px;
+
+}
+
+.blue:hover~.red {
+  visibility: initial;
+  width: 430px;
+
+}
+
+/* .red:hover .colors {
+  visibility: initial;
   width: 100%;
-  height: 624px;
-  background: #262626;
-  h1{
-    padding-top: 30px;
-    color: #fff;
-  }
-  p{
-    
-  }
   
 }
+
+.blue:hover~.red .colors {
+  visibility: initial;
+  width: 100%;
+  
+} */
+
+.blue:hover~.red .color1 {
+  visibility: initial;
+  opacity: 1;
+  /* transition: opacity 5s; */
+}
+
+.red:hover .color1 {
+  visibility: initial;
+  opacity: 1;
+  /* transition: opacity 5s; */
+}
+
+.blue:hover~.red .color2 {
+  /* visibility: initial; */
+  /* opacity: 1; */
+  /* transition: opacity 5s; */
+}
+
+.red:hover .color2 {
+  /* visibility: initial; */
+  /* opacity: 1; */
+  /* transition: opacity 5s; */
+}
+
+.blue:hover~.red .color3 {
+  visibility: initial;
+  opacity: 1;
+  /* transition: opacity 5s; */
+}
+
+.red:hover .color3 {
+  visibility: initial;
+  opacity: 1;
+  /* transition: opacity 5s; */
+}
+
+.blue:hover~.red .color4 {
+  visibility: initial;
+  opacity: 1;
+  /* transition: opacity 5s; */
+}
+
+.red:hover .color4 {
+  visibility: initial;
+  opacity: 1;
+  /* transition: opacity 5s; */
+}
+
+.blue:hover~.red .color5 {
+  visibility: initial;
+  opacity: 1;
+  /* transition: opacity 5s; */
+}
+
+.red:hover .color5 {
+  visibility: initial;
+  opacity: 1;
+  /* transition: opacity 5s; */
+}
+
+.app-style-class {
+
+  border: 5px solid white;
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+//whole nav bar area
+// nav {
+//   height: 100px;
+// }
+//------------
+//stewartclay
+.logo{
+  z-index: 9999;
+  position: absolute;
+  padding-top: 30px;
+  padding-left: 35px;
+  font-size: 22px;
+  color: #ffff;
+  font: bold;
+}
+.logo-clay{
+  color: #FF893A;
+}
+//------------
+.nav-links {
+  display: flex;
+  list-style: none;
+  width: 50%;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: auto;
+}
+
+.nav-links li a {
+  float: right;
+    font-size: 25px;
+    padding-right: 100px;
+    color: #999999;
+  text-decoration: none;
+
+}
+  .line {
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    margin: 5px;
+    transition:  all cubic-bezier(0.26, 1.0, 0.27, 1.55) 0.35s;
+  }
+.hamburger div:nth-child(1){
+    width: 27px;
+   // float: right;
+}
+.hamburger div:nth-child(2){
+  width: 32px;
+  //float: right;
+}
+.hamburger div:nth-child(3){
+width: 25px;
+//float: right;
+}
+  //CAUSES an issue with the color picker
+// nav {
+//   position: relative;
+// }
+
+.hamburger {
+  z-index: 3;
+  position: absolute;
+  cursor: pointer;
+  right: 24px;
+  padding-top: 27.0px;
+  //transform: translate(-5%, -50%);
+}
+
+.nav-links {
+  z-index: 2;
+  position: fixed;
+  background: #151515;
+ // height: 100vh;
+  width: 100%;
+  //flex-direction: column;
+  padding-top: 100px;
+  // padding-left: 50px;
+
+  display: block;
+  clip-path: circle(100px at 90% -10%);
+  -webkit-clip-path: circle(100px at 90% -20%);
+  transition: all 1s ease-out;
+  pointer-events: none;
+}
+//this is what is called from the js file
+.nav-links.open {
+  clip-path: circle(100px at 90% -10%);
+  -webkit-clip-path: circle(50% at 90% -10%);
+  pointer-events: all;
+  //sets the speed for the background to come in
+  transition: all 1000ms ease-in-out;
+  transform-origin: top left;
+}
+//test animation
+.hamburger.animate{
+    //moves ham to be inline with menu text
+    margin-top: -2px;
+  .line:nth-child(1){
+    width: 27px;
+    transform: rotate(45deg);
+    transform-origin: 0% 48%;
+  }
+  .line:nth-child(2){
+    width: 27px;
+    opacity: 0;
+  }
+  .line:nth-child(3){
+    width: 27px;
+    transform: rotate(-45deg);
+    transform-origin: 16% 100%;
+  }
+}
+
+.landing {
+  flex-direction: column;
+}
+.nav-links li {
+  opacity: 0;
+  padding: 30px;
+}
+.nav-links li a {
+  font-size: 25px;
+  color: #999999;
+}
+.nav-links li:nth-child(1) {
+  transition: all 0.5s ease 0.4s;
+}
+.nav-links li:nth-child(2) {
+  transition: all 0.5s ease 0.4s;
+}
+.nav-links li:nth-child(3) {
+  transition: all 0.5s ease 0.4s;
+}
+.nav-links li:nth-child(4) {
+  transition: all 0.5s ease 0.4s;
+}
+//this is what is called from the js file
+li.fade {
+  opacity: 1;
+}
+// hr{
+//   display: none;
+//   width: 50px;
+//   //margin:0 0;
+//   border:1px solid rgb(161, 65, 0);
+// }
+//930 plzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+@media screen and (min-width: 1450px) {
+  .hamburger , .nav-links{
+    display: none;
+}
+.menu{
+  display: block;
+}
+.logo{
+  position: fixed;
+}
+}
+
+
+

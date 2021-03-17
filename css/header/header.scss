@@ -1,37 +1,4 @@
-// body, html {
-//   background: #151515;
-//   /* height: 100%;
-//   padding: 0px;
-//   margin: 0px; */
-// }
 
-// h1 {
-//   margin: 0px;
-//   font-size: 50px;
-//   padding-top: 100px;
-//   text-align: center;
-// }
-
-// .color-picker-container{
-//   padding-top: 30px;
-//   padding-right: 40%;
-// }
-// .color-picker-container {
-//   /* padding-top: 30px;
-//   padding-right: 40%; */
-//   // padding-right: 50px;
-//   // padding-top: 200px;
-//   // float: right;
-//   display: none;
-//   position: fixed;
-//   float: right;
-//     right: 50px;
-//     top: 50%;
-// }
-nav{
-  //allows the header to overlap content and be see through
-  // position: absolute;
-}
 .menu{
   //display: none;
   position: fixed;
@@ -48,21 +15,21 @@ nav{
 }
 
 .color-picker-svg {
-  width: 32px;
-  padding-left: 24px;
-  padding-top: 20px;
+  width: 25px;
+  padding-left: 21px;
+  padding-top: 12px;
 }
 .home-svg{
-  width: 37px;
+  width: 30px;
   height: 27px;
-  padding-left: 21px;
-  padding-top: 26px;
+  padding-left: 17px;
+  padding-top: 18px;
 }
 .chatting-svg{
-  width: 37px;
+  width: 27px;
   height: 27px;
-  padding-left: 21px;
-  padding-top: 26px;
+  padding-left: 19px;
+  padding-top: 20px;
 }
 #color-picker {
   fill: #FFFF;
@@ -81,8 +48,8 @@ nav{
 
 }
 .home-dot{
-  width: 80px;
-  height: 80px;
+  width: 65px;
+  height: 65px;
   border-radius: 150px;
   margin-top: 10px;
   // float: right;
@@ -92,8 +59,8 @@ nav{
   border: 0;
 }
 .contact-dot{
-  width: 80px;
-  height: 80px;
+  width: 65px;
+  height: 65px;
   border-radius: 150px;
   margin-top: 10px;
   /* sets the postion of the blocks */
@@ -110,8 +77,8 @@ a.fill-div {
 .red,
 .blue {
   /* sets the width and height off the 2 blocks */
-  width: 80px;
-  height: 80px;
+  width: 65px;
+  height: 65px;
   border-radius: 150px;
   /* sets the postion of the blocks */
   // float: right;
@@ -356,9 +323,13 @@ a.fill-div {
 }
 
 .nav-links li a {
-  color: white;
+  float: right;
+  font-size: 25px;
+  padding-right: 40px;
+    // color: #FFFF;
+    color: #FFFF;
   text-decoration: none;
-  font-size: 16px;
+
 }
   .line {
     height: 3px;
@@ -400,21 +371,21 @@ width: 25px;
   width: 100%;
   //flex-direction: column;
   padding-top: 100px;
-  padding-left: 50px;
+  // padding-left: 50px;
 
   display: block;
   clip-path: circle(100px at 90% -10%);
   -webkit-clip-path: circle(100px at 90% -20%);
-  transition: all 1s ease-out;
+  transition: all 600ms ease-out;
   pointer-events: none;
 }
 //this is what is called from the js file
 .nav-links.open {
-  clip-path: circle(1000px at 90% -10%);
-  -webkit-clip-path: circle(1000px at 90% -10%);
+  clip-path: circle(100px at 90% -10%);
+  -webkit-clip-path: circle(35% at 90% -5%);
   pointer-events: all;
   //sets the speed for the background to come in
-  transition: all 1000ms ease-in-out;
+  transition: all 600ms ease-in-out;
   transform-origin: top left;
 }
 //test animation
@@ -442,11 +413,12 @@ width: 25px;
 }
 .nav-links li {
   opacity: 0;
-  padding: 20px;
+  padding: 30px;
 }
 .nav-links li a {
   font-size: 25px;
-  color: #999999;
+  color: #FFFF;
+  margin-top: -30px;
 }
 .nav-links li:nth-child(1) {
   transition: all 0.5s ease 0.4s;

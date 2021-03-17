@@ -61,8 +61,17 @@ colorButton.on("click", function () {
 const hamburger = document.querySelector(".hamburger");
 const navLinks = document.querySelector(".nav-links");
 const links = document.querySelectorAll(".nav-links li");
-
+// const list = document.querySelector(".header-body");
 hamburger.addEventListener("click", () => {
+
+    // if($(".header-body").css("overflow") === "hidden"){
+    //     console.log("hidden");
+    //     document.body.style.overflow = 'unset';
+    // }
+    // else{
+    //     console.log("unset");
+    //     document.body.style.overflow = 'hidden';
+    // }
   //this will call the area open in the css
   navLinks.classList.toggle("open");
   hamburger.classList.toggle("animate");

@@ -13,23 +13,23 @@
 }
 
 .color-picker-svg {
-  width: 32px;
-  padding-left: 24px;
-  padding-top: 20px;
+  width: 25px;
+  padding-left: 21px;
+  padding-top: 12px;
 }
 
 .home-svg {
-  width: 37px;
+  width: 30px;
   height: 27px;
-  padding-left: 21px;
-  padding-top: 26px;
+  padding-left: 17px;
+  padding-top: 18px;
 }
 
 .chatting-svg {
-  width: 37px;
+  width: 27px;
   height: 27px;
-  padding-left: 21px;
-  padding-top: 26px;
+  padding-left: 19px;
+  padding-top: 20px;
 }
 
 #color-picker {
@@ -51,8 +51,8 @@
 }
 
 .home-dot {
-  width: 80px;
-  height: 80px;
+  width: 65px;
+  height: 65px;
   border-radius: 150px;
   margin-top: 10px;
   /* sets the postion of the blocks */
@@ -63,8 +63,8 @@
 }
 
 .contact-dot {
-  width: 80px;
-  height: 80px;
+  width: 65px;
+  height: 65px;
   border-radius: 150px;
   margin-top: 10px;
   /* sets the postion of the blocks */
@@ -84,8 +84,8 @@ a.fill-div {
 .red,
 .blue {
   /* sets the width and height off the 2 blocks */
-  width: 80px;
-  height: 80px;
+  width: 65px;
+  height: 65px;
   border-radius: 150px;
   /* sets the postion of the blocks */
   background-color: #202324;
@@ -322,9 +322,11 @@ a.fill-div {
 }
 
 .nav-links li a {
-  color: white;
+  float: right;
+  font-size: 25px;
+  padding-right: 40px;
+  color: #FFFF;
   text-decoration: none;
-  font-size: 16px;
 }
 
 .line {
@@ -361,21 +363,20 @@ a.fill-div {
   background: #151515;
   width: 100%;
   padding-top: 100px;
-  padding-left: 50px;
   display: block;
   clip-path: circle(100px at 90% -10%);
   -webkit-clip-path: circle(100px at 90% -20%);
-  -webkit-transition: all 1s ease-out;
-  transition: all 1s ease-out;
+  -webkit-transition: all 600ms ease-out;
+  transition: all 600ms ease-out;
   pointer-events: none;
 }
 
 .nav-links.open {
-  clip-path: circle(1000px at 90% -10%);
-  -webkit-clip-path: circle(1000px at 90% -10%);
+  clip-path: circle(100px at 90% -10%);
+  -webkit-clip-path: circle(35% at 90% -5%);
   pointer-events: all;
-  -webkit-transition: all 1000ms ease-in-out;
-  transition: all 1000ms ease-in-out;
+  -webkit-transition: all 600ms ease-in-out;
+  transition: all 600ms ease-in-out;
   -webkit-transform-origin: top left;
           transform-origin: top left;
 }
@@ -414,12 +415,13 @@ a.fill-div {
 
 .nav-links li {
   opacity: 0;
-  padding: 20px;
+  padding: 30px;
 }
 
 .nav-links li a {
   font-size: 25px;
-  color: #999999;
+  color: #FFFF;
+  margin-top: -30px;
 }
 
 .nav-links li:nth-child(1) {

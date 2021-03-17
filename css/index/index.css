@@ -5,7 +5,7 @@ body, html {
 
 .landing-area {
   background-image: linear-gradient(66deg, transparent 0%, transparent 24%, #262626 24%, #262626 80%, transparent 80%, transparent 100%), linear-gradient(153deg, transparent 0%, transparent 29%, #262626 29%, #262626 45%, transparent 45%, transparent 100%), linear-gradient(199deg, transparent 0%, transparent 32%, #262626 32%, #262626 59%, transparent 59%, transparent 100%), linear-gradient(277deg, transparent 0%, transparent 56%, #262626 56%, #262626 57%, transparent 57%, transparent 100%), linear-gradient(90deg, #151515, #151515);
-  height: 100vh;
+  min-height: 85vh;
 }
 
 .home-dot {
@@ -50,16 +50,17 @@ body, html {
 .hi-there {
   font-size: 20px;
   font-weight: 500;
-  margin-top: 350px;
+  padding-top: 40px;
+  margin-top: 15%;
   margin-bottom: 7px;
-  color: #ffff;
+  color: #FFF;
 }
 
 .im-stewart-clay {
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 7px;
-  color: #fff;
+  color: #FFF;
 }
 
 .stewart-clay {
@@ -73,7 +74,7 @@ body, html {
   max-width: 817px;
   padding-left: 22px;
   padding-right: 22px;
-  color: #ffff;
+  color: #FFF;
 }
 
 .contactMeBtn {
@@ -86,7 +87,7 @@ body, html {
   width: 230px;
   height: 48px;
   border-radius: 10px;
-  color: #FFFF;
+  color: #FFF;
   background: #FF893A;
   -webkit-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
           box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
@@ -104,7 +105,7 @@ body, html {
   width: 230px;
   height: 48px;
   border-radius: 10px;
-  color: #FFFF;
+  color: #FFF;
   background: #FF893A;
   -webkit-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
           box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
@@ -155,7 +156,7 @@ body, html {
   font-size: 40px;
   font-weight: 500;
   padding-top: 20px;
-  color: #fff;
+  color: #FFF;
 }
 
 .project-1 {
@@ -194,14 +195,14 @@ body, html {
   font-weight: 500;
   margin-top: 0px;
   padding-top: 30px;
-  color: #fff;
+  color: #FFF;
 }
 
 .about-project-1 p {
   font-size: 16px;
   font-weight: 300;
   letter-spacing: 0.64;
-  color: #fff;
+  color: #FFF;
   line-height: 32px;
   padding-left: 10px;
   padding-right: 10px;
@@ -219,7 +220,7 @@ body, html {
   width: 160px;
   height: 38px;
   border-radius: 5px;
-  color: #FFFF;
+  color: #FFF;
   background: #2EA44F;
   border: 0;
   outline: none;
@@ -240,7 +241,7 @@ body, html {
   height: 38px;
   border-radius: 5px;
   color: #000;
-  background: #FFFF;
+  background: #FFF;
   border: 0;
   outline: none;
 }
@@ -258,7 +259,7 @@ body, html {
   width: 94px;
   height: 32px;
   border-radius: 5px;
-  color: #FFFF;
+  color: #FFF;
   background: #6A6A6A;
   border: 0;
   outline: none;
@@ -276,7 +277,7 @@ body, html {
   width: 51px;
   height: 32px;
   border-radius: 5px;
-  color: #FFFF;
+  color: #FFF;
   background: #6A6A6A;
   border: 0;
   outline: none;
@@ -294,7 +295,7 @@ body, html {
   width: 101px;
   height: 32px;
   border-radius: 5px;
-  color: #FFFF;
+  color: #FFF;
   background: #6A6A6A;
   border: 0;
   outline: none;
@@ -312,7 +313,7 @@ body, html {
   width: 51px;
   height: 32px;
   border-radius: 5px;
-  color: #FFFF;
+  color: #FFF;
   background: #6A6A6A;
   border: 0;
   outline: none;
@@ -354,14 +355,14 @@ body, html {
   font-weight: 500;
   margin-top: 0px;
   padding-top: 30px;
-  color: #fff;
+  color: #FFF;
 }
 
 .about-project-2 p {
   font-size: 16px;
   font-weight: 300;
   letter-spacing: 0.64;
-  color: #fff;
+  color: #FFF;
   line-height: 32px;
   padding-left: 10px;
   padding-right: 10px;
@@ -379,7 +380,7 @@ body, html {
   width: 160px;
   height: 38px;
   border-radius: 5px;
-  color: #FFFF;
+  color: #FFF;
   background: #2EA44F;
   border: 0;
   outline: none;
@@ -418,7 +419,7 @@ body, html {
   width: 94px;
   height: 32px;
   border-radius: 5px;
-  color: #FFFF;
+  color: #FFF;
   background: #6A6A6A;
   border: 0;
   outline: none;
@@ -436,7 +437,7 @@ body, html {
   width: 51px;
   height: 32px;
   border-radius: 5px;
-  color: #FFFF;
+  color: #FFF;
   background: #6A6A6A;
   border: 0;
   outline: none;
@@ -454,7 +455,7 @@ body, html {
   width: 101px;
   height: 32px;
   border-radius: 5px;
-  color: #FFFF;
+  color: #FFF;
   background: #6A6A6A;
   border: 0;
   outline: none;
@@ -472,7 +473,7 @@ body, html {
   width: 51px;
   height: 32px;
   border-radius: 5px;
-  color: #FFFF;
+  color: #FFF;
   background: #6A6A6A;
   border: 0;
   outline: none;
@@ -488,7 +489,7 @@ body, html {
   width: 275px;
   height: 130px;
   border-radius: 10px;
-  color: #fff;
+  color: #FFF;
   background: #FF893A;
   -webkit-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
           box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);

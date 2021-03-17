@@ -3,15 +3,17 @@
 //Variable Declarations
 $background-color: #151515;
 $github-color: #2EA44F;
-
-
+$primay-accent-color: #FF893A;
+$white-fonts: #FFF;
+$white-button-color: #FFF;
 body, html{
 margin: 0;
 background: $background-color;
 }
 .landing-area{
   background-image: linear-gradient(66deg, transparent 0%, transparent 24%,rgb(38,38,38) 24%, rgb(38,38,38) 80%,transparent 80%, transparent 100%),linear-gradient(153deg, transparent 0%, transparent 29%,rgb(38,38,38) 29%, rgb(38,38,38) 45%,transparent 45%, transparent 100%),linear-gradient(199deg, transparent 0%, transparent 32%,rgb(38,38,38) 32%, rgb(38,38,38) 59%,transparent 59%, transparent 100%),linear-gradient(277deg, transparent 0%, transparent 56%,rgb(38,38,38) 56%, rgb(38,38,38) 57%,transparent 57%, transparent 100%),linear-gradient(90deg, rgb(21,21,21),rgb(21,21,21));
-  height: 100vh;
+  min-height: 85vh;
+  
   //background-color: aqua;
 }
 .portfolio{
@@ -21,7 +23,7 @@ background: $background-color;
 }
 
 .home-dot{
-  background-color: #FF893A !important;
+  background-color: $primay-accent-color !important;
 }
 
 @keyframes trasitionIn{
@@ -47,14 +49,10 @@ background: $background-color;
 .hi-there{
   font-size: 20px;
   font-weight: 500;
-  margin-top: 350px;
-  // padding-top: 20%;
+  padding-top: 40px;
+  margin-top: 15%;
   margin-bottom: 7px;
-  //padding-left: 22px;
-  // padding-left: 8%;
-
-  // padding-left: 9%;
-  color: #ffff;
+  color: $white-fonts;
 }
 .im-stewart-clay{
   font-size: 24px;
@@ -65,10 +63,10 @@ background: $background-color;
   // padding-left: 8%;
   // padding-left: 9.8%;
   //padding-top: 15px;
-  color: #fff;
+  color: $white-fonts;
 }
 .stewart-clay{
-  color: #FF893A;
+  color: $primay-accent-color;
 }
 .about-me{
  
@@ -82,7 +80,7 @@ background: $background-color;
   //padding-top: 15px;
   padding-left: 22px;
   padding-right: 22px;
-  color: #ffff;
+  color: $white-fonts;
 }
 .contactMeBtn{
   font-size: 16px;
@@ -95,8 +93,8 @@ background: $background-color;
   width: 230px;
   height: 48px;
   border-radius: 10px;
-  color: #FFFF;
-  background: #FF893A;
+  color: $white-fonts;
+  background: $primay-accent-color;
   box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
   border: 0;
   outline: none;
@@ -111,8 +109,8 @@ background: $background-color;
   width: 230px;
   height: 48px;
   border-radius: 10px;
-  color: #FFFF;
-  background: #FF893A;
+  color: $white-fonts;
+  background: $primay-accent-color;
   box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
   border: 0;
   outline: none;
@@ -158,7 +156,7 @@ background: $background-color;
   font-size: 40px;
   font-weight: 500;
   padding-top: 20px;
-  color: #fff;
+  color: $white-fonts;
 }
 // .port{
 //   text-align: center;
@@ -199,13 +197,13 @@ background: $background-color;
     font-weight: 500;
     margin-top: 0px;
     padding-top: 30px;
-    color: #fff;
+    color: $white-fonts;
   }
   p{
     font-size: 16px;
     font-weight: 300;
     letter-spacing: 0.64;
-    color: #fff;
+    color: $white-fonts;
     line-height: 32px;
     padding-left: 10px;
     padding-right: 10px;
@@ -224,7 +222,7 @@ background: $background-color;
     width: 160px;
     height: 38px;
     border-radius: 5px;
-    color: #FFFF;
+    color: $white-fonts;
     background:$github-color;
     border: 0;
     outline: none;
@@ -245,7 +243,7 @@ background: $background-color;
     height: 38px;
     border-radius: 5px;
     color: #000;
-    background: #FFFF;
+    background: #FFF;
     border: 0;
     outline: none;
   }
@@ -263,7 +261,7 @@ background: $background-color;
     width: 94px;
     height: 32px;
     border-radius: 5px;
-    color: #FFFF;
+    color: $white-fonts;
     background: #6A6A6A;
     border: 0;
     outline: none;
@@ -281,7 +279,7 @@ background: $background-color;
     width: 51px;
     height: 32px;
     border-radius: 5px;
-    color: #FFFF;
+    color: $white-fonts;
     background: #6A6A6A;
     border: 0;
     outline: none;
@@ -299,7 +297,7 @@ background: $background-color;
     width: 101px;
     height: 32px;
     border-radius: 5px;
-    color: #FFFF;
+    color: $white-fonts;
     background: #6A6A6A;
     border: 0;
     outline: none;
@@ -317,7 +315,7 @@ background: $background-color;
     width: 51px;
     height: 32px;
     border-radius: 5px;
-    color: #FFFF;
+    color: $white-fonts;
     background: #6A6A6A;
     border: 0;
     outline: none;
@@ -352,13 +350,13 @@ background: $background-color;
     font-weight: 500;
     margin-top: 0px;
     padding-top: 30px;
-    color: #fff;
+    color: $white-fonts;
   }
   p{
     font-size: 16px;
     font-weight: 300;
     letter-spacing: 0.64;
-    color: #fff;
+    color: $white-fonts;
     line-height: 32px;
     padding-left: 10px;
     padding-right: 10px;
@@ -377,7 +375,7 @@ background: $background-color;
     width: 160px;
     height: 38px;
     border-radius: 5px;
-    color: #FFFF;
+    color: $white-fonts;
     background: $github-color;
     border: 0;
     outline: none;
@@ -416,7 +414,7 @@ background: $background-color;
     width: 94px;
     height: 32px;
     border-radius: 5px;
-    color: #FFFF;
+    color: $white-fonts;
     background: #6A6A6A;
     border: 0;
     outline: none;
@@ -434,7 +432,7 @@ background: $background-color;
     width: 51px;
     height: 32px;
     border-radius: 5px;
-    color: #FFFF;
+    color: $white-fonts;
     background: #6A6A6A;
     border: 0;
     outline: none;
@@ -452,7 +450,7 @@ background: $background-color;
     width: 101px;
     height: 32px;
     border-radius: 5px;
-    color: #FFFF;
+    color: $white-fonts;
     background: #6A6A6A;
     border: 0;
     outline: none;
@@ -470,7 +468,7 @@ background: $background-color;
     width: 51px;
     height: 32px;
     border-radius: 5px;
-    color: #FFFF;
+    color: $white-fonts;
     background: #6A6A6A;
     border: 0;
     outline: none;
@@ -501,8 +499,8 @@ margin-top: 50px;
 width: 275px;
 height: 130px;
 border-radius: 10px;
-color: #fff;
-background: #FF893A;
+color: $white-fonts;
+background: $primay-accent-color;
 box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
 border: 0;
 outline: none;

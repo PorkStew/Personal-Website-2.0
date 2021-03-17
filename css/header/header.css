@@ -292,10 +292,6 @@ a.fill-div {
   padding: 0;
 }
 
-nav {
-  height: 100px;
-}
-
 .logo {
   z-index: 9999;
   position: absolute;

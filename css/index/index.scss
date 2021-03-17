@@ -1,14 +1,29 @@
+//http://jsfiddle.net/swfour/hx7cuh96/7/
+
+//Variable Declarations
+$background-color: #151515;
+$github-color: #2EA44F;
+
+
+body, html{
+margin: 0;
+background: $background-color;
+}
+.landing-area{
+  background-image: linear-gradient(66deg, transparent 0%, transparent 24%,rgb(38,38,38) 24%, rgb(38,38,38) 80%,transparent 80%, transparent 100%),linear-gradient(153deg, transparent 0%, transparent 29%,rgb(38,38,38) 29%, rgb(38,38,38) 45%,transparent 45%, transparent 100%),linear-gradient(199deg, transparent 0%, transparent 32%,rgb(38,38,38) 32%, rgb(38,38,38) 59%,transparent 59%, transparent 100%),linear-gradient(277deg, transparent 0%, transparent 56%,rgb(38,38,38) 56%, rgb(38,38,38) 57%,transparent 57%, transparent 100%),linear-gradient(90deg, rgb(21,21,21),rgb(21,21,21));
+  height: 100vh;
+  //background-color: aqua;
+}
+.portfolio{
+  // background-color: bisque;
+  //Maybe add this back
+  // height: 100vh;
+}
 
 .home-dot{
   background-color: #FF893A !important;
 }
-body,html{ 
-  background: #151515;
-  height: 100%;
-  animation: trasitionIn 0.75s;
-  padding: 0;
-  margin: 0;
-}
+
 @keyframes trasitionIn{
   from{
     opacity: 0;
@@ -23,22 +38,7 @@ body,html{
   font-family: montserrat, sans-serif;
 }
 
-body{
-  // background: url('/images/index/diagonal-rectangle.svg') no-repeat;
-  // //background-size: cover;
-  // background-size: 1000px;
-  // //height: 100px;
-  // position: relative;
-  // overflow: hidden;
-  // height: 5px;
-  background-color: #151515;
-  background-image: -webkit-linear-gradient(116deg, #ffffff00 50%, #262626 50%);
-}
-
-.img{
-  width: 100%;
-}
-.welcome{
+.landing-area{
   text-align: center;
   // position: absolute;
   top: 30%;
@@ -47,7 +47,7 @@ body{
 .hi-there{
   font-size: 20px;
   font-weight: 500;
- 
+  margin-top: 350px;
   // padding-top: 20%;
   margin-bottom: 7px;
   //padding-left: 22px;
@@ -116,6 +116,7 @@ body{
   box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
   border: 0;
   outline: none;
+
 }
 
 //social links
@@ -156,7 +157,7 @@ body{
   text-align: center;
   font-size: 40px;
   font-weight: 500;
-  padding-top: 500px;
+  padding-top: 20px;
   color: #fff;
 }
 // .port{
@@ -224,7 +225,7 @@ body{
     height: 38px;
     border-radius: 5px;
     color: #FFFF;
-    background: #2EA44F;
+    background:$github-color;
     border: 0;
     outline: none;
   }
@@ -323,6 +324,173 @@ body{
   }
 }
 
+.project-2{
+  max-width: 275px;
+  margin: auto;
+  padding-top: 40px;
+}
+
+.topShotTimer2{
+  height: 100%;
+}
+.logo-project-2{
+  flex: 0 0 65%;
+  width: 100%;
+  height: 193px;
+  text-align: center;
+  background: #282e34;
+  border-radius: 15px 15px 0px 0px;
+}
+.about-project-2{
+  flex: 1;
+  text-align: center;
+  width: 100%;
+  height: 624px;
+  background: #262626;
+  h1{
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 0px;
+    padding-top: 30px;
+    color: #fff;
+  }
+  p{
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.64;
+    color: #fff;
+    line-height: 32px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .viewProjectBtn2{
+    
+    text-align: center;
+    display: block;
+
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: auto;
+    display: block;
+    margin-top: 20px;
+    width: 160px;
+    height: 38px;
+    border-radius: 5px;
+    color: #FFFF;
+    background: $github-color;
+    border: 0;
+    outline: none;
+  }
+  .githubBtn2{
+    margin-top: 20px;
+    margin: auto;
+    text-align: center;
+    display: block;
+
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: auto;
+    display: block;
+    margin-top: 20px;
+    width: 107px;
+    height: 38px;
+    border-radius: 5px;
+    color: #000;
+    background: #FFFF;
+    border: 0;
+    outline: none;
+  }
+  .flutterBtn2{
+    margin-top: 20px;
+    text-align: center;
+    display: block;
+
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin: auto;
+    display: block;
+    margin-top: 20px;
+    width: 94px;
+    height: 32px;
+    border-radius: 5px;
+    color: #FFFF;
+    background: #6A6A6A;
+    border: 0;
+    outline: none;
+  }
+  .cssBtn2{
+    text-align: center;
+    display: block;
+
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin: auto;
+    display: block;
+    margin-top: 20px;
+    width: 51px;
+    height: 32px;
+    border-radius: 5px;
+    color: #FFFF;
+    background: #6A6A6A;
+    border: 0;
+    outline: none;
+  }
+  .androidBtn2{
+    text-align: center;
+    display: block;
+
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin: auto;
+    display: block;
+    margin-top: 20px;
+    width: 101px;
+    height: 32px;
+    border-radius: 5px;
+    color: #FFFF;
+    background: #6A6A6A;
+    border: 0;
+    outline: none;
+  }
+  .iosBtn2{
+    text-align: center;
+    display: block;
+
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin: auto;
+    display: block;
+    margin-top: 20px;
+    width: 51px;
+    height: 32px;
+    border-radius: 5px;
+    color: #FFFF;
+    background: #6A6A6A;
+    border: 0;
+    outline: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .seeMore{
   font-size: 16px;
 font-weight: bold;
@@ -346,7 +514,7 @@ outline: none;
   // padding-left: 22.5%;
   // }
  
-    .welcome{
+    .landing-area{
       text-align: left;
       padding-left: 15%;
       .about-me{
@@ -354,6 +522,9 @@ outline: none;
         padding-right: 0;
       }
       .contactMeBtn{
+        margin-left: 0;
+      }
+      .resumeBtn{
         margin-left: 0;
       }
       .index-social-links{
@@ -383,13 +554,13 @@ outline: none;
 //   height: 100%  !important;
 // }
 
-// .contactMeBtn{
-//   display: inline;
+.contactMeBtn{
+display: inline;
 //   margin-left: 21%;
-// }
+}
 .resumeBtn{
   display: inline;
-  margin-left: 30px;
+  margin-left: 30px !important;
 }
 
 .hi-there{
@@ -411,13 +582,14 @@ outline: none;
 //    height: 100%  !important;
 //  }
 .portfolio{
-  padding-left: 22px;
-  padding-right: 22px;
-  max-width: 1178px;
-  margin: auto;
+  // padding-left: 22px;
+  // padding-right: 22px;
+  // max-width: 1178px;
+  // margin: auto;
 }
 .project-1{
   display: flex;
+  max-width: 1178px;
   flex-direction: row-reverse;
 }
 .logo-project-1{
@@ -432,9 +604,7 @@ outline: none;
   padding-left: 45px;
 }
 
-.project-1{
-  max-width: 1178px;
-}
+
 // .logo-project-1{
 //   width: 415px;
 // }
@@ -475,12 +645,71 @@ outline: none;
   display: inline;
  }
 }
-.img{
-  width: 100%;
+
+
+
+.project-2{
+  display: flex;
+  max-width: 1178px;
+  flex-direction: row;
 }
+.logo-project-2{
+  flex: 1;
+  height: auto;
+  border-radius: 15px 0px 0px 15px;
+}
+.about-project-2{
+  flex: 0 0 65%;
+  height: auto;
+  text-align: left;
+  padding-left: 45px;
+}
+
+
+// .logo-project-1{
+//   width: 415px;
+// }
+.about-project-2{
+  height: auto;
+  padding-bottom: 45px;
+ h1{
+   text-align: left;
+  
+ }
+ p{
+   text-align: left;
+   max-width: 650px;
+ }
+  .viewProjectBtn2{
+    
+  display: inline;
+  margin-top: 40px;
+ }
+ .githubBtn2{
+   margin-left: 20px;
+  display: inline;
+ }
+ .flutterBtn2{
+   margin-left: 50px;
+  display: inline;
+ }
+ .cssBtn2{
+  margin-left: 15px;
+  display: inline;
+ }
+ .androidBtn2{
+  margin-left: 15px;
+  display: inline;
+ }
+ .iosBtn2{
+  margin-left: 15px;
+  display: inline;
+ }
+}
+
 .seeMore{
   width: 100%;
-  
+    max-width: 1178px;
 }
 
 }

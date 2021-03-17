@@ -39,6 +39,7 @@ body, html {
 }
 
 .contactMe {
+  padding-top: 100px;
   font-size: 32px;
   font-weight: bold;
   text-align: center;

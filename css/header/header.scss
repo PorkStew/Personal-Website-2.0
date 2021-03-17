@@ -28,7 +28,10 @@
 //     right: 50px;
 //     top: 50%;
 // }
-
+nav{
+  //allows the header to overlap content and be see through
+  // position: absolute;
+}
 .menu{
   //display: none;
   position: fixed;
@@ -324,9 +327,9 @@ a.fill-div {
   padding: 0;
 }
 //whole nav bar area
-nav {
-  height: 100px;
-}
+// nav {
+//   height: 100px;
+// }
 //------------
 //stewartclay
 .logo{

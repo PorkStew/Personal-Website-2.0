@@ -4,8 +4,14 @@ body, html {
 }
 
 .landing-area {
-  background-image: linear-gradient(66deg, transparent 0%, transparent 24%, #262626 24%, #262626 80%, transparent 80%, transparent 100%), linear-gradient(153deg, transparent 0%, transparent 29%, #262626 29%, #262626 45%, transparent 45%, transparent 100%), linear-gradient(199deg, transparent 0%, transparent 32%, #262626 32%, #262626 59%, transparent 59%, transparent 100%), linear-gradient(277deg, transparent 0%, transparent 56%, #262626 56%, #262626 57%, transparent 57%, transparent 100%), linear-gradient(90deg, #151515, #151515);
-  min-height: 85vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("../../images/index/john-towner-JgOeRuGD_Y4-unsplash.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../images/index/john-towner-JgOeRuGD_Y4-unsplash.jpg");
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.download-resume {
+  text-decoration: none;
 }
 
 .home-dot {
@@ -48,10 +54,10 @@ body, html {
 }
 
 .hi-there {
+  text-align: center;
   font-size: 20px;
   font-weight: 500;
-  padding-top: 40px;
-  margin-top: 15%;
+  padding-top: 330px;
   margin-bottom: 7px;
   color: #FFF;
 }
@@ -59,6 +65,8 @@ body, html {
 .im-stewart-clay {
   font-size: 24px;
   font-weight: 700;
+  text-align: center;
+  margin: auto;
   margin-bottom: 7px;
   color: #FFF;
 }
@@ -68,6 +76,9 @@ body, html {
 }
 
 .about-me {
+  line-height: 32px;
+  text-align: center;
+  margin: auto;
   font-size: 16px;
   font-weight: lighter;
   letter-spacing: 1.08px;
@@ -151,6 +162,11 @@ body, html {
   margin-top: 17px;
 }
 
+.portfolio {
+  padding-left: 22px;
+  padding-right: 22px;
+}
+
 .port {
   text-align: center;
   font-size: 40px;
@@ -201,10 +217,9 @@ body, html {
 .about-project-1 p {
   font-size: 16px;
   font-weight: 300;
-  letter-spacing: 0.64;
+  letter-spacing: 2px;
   color: #FFF;
   line-height: 32px;
-  padding-left: 10px;
   padding-right: 10px;
 }
 
@@ -361,10 +376,9 @@ body, html {
 .about-project-2 p {
   font-size: 16px;
   font-weight: 300;
-  letter-spacing: 0.64;
+  letter-spacing: 2px;
   color: #FFF;
   line-height: 32px;
-  padding-left: 10px;
   padding-right: 10px;
 }
 
@@ -498,26 +512,16 @@ body, html {
 }
 
 @media screen and (min-width: 425px) {
-  .landing-area {
-    text-align: left;
-    padding-left: 15%;
-  }
-  .landing-area .about-me {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .landing-area .contactMeBtn {
-    margin-left: 0;
-  }
-  .landing-area .resumeBtn {
-    margin-left: 0;
-  }
-  .landing-area .index-social-links {
-    text-align: left;
+  .im-stewart-clay {
+    font-size: 40px;
   }
 }
 
 @media screen and (min-width: 950px) {
+  .portfolio {
+    margin-left: 140px;
+    margin-right: 140px;
+  }
   .contactMeBtn {
     display: inline;
   }
@@ -527,11 +531,9 @@ body, html {
   }
   .hi-there {
     font-size: 22px;
-    text-align: left;
   }
   .im-stewart-clay {
     font-size: 72.81px;
-    text-align: left;
   }
 }
 

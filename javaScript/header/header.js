@@ -60,7 +60,8 @@ colorButton.on("click", function () {
 
 const hamburger = document.querySelector(".hamburger");
 const navLinks = document.querySelector(".nav-links");
-const links = document.querySelectorAll(".nav-links li");
+// const links = document.querySelectorAll(".nav-links li");
+const links = document.querySelectorAll(".mobile-nav");
 // const list = document.querySelector(".header-body");
 hamburger.addEventListener("click", () => {
 
@@ -73,8 +74,10 @@ hamburger.addEventListener("click", () => {
     //     document.body.style.overflow = 'hidden';
     // }
   //this will call the area open in the css
-  navLinks.classList.toggle("open");
+//   navLinks.classList.toggle("open");
   hamburger.classList.toggle("animate");
+  hamburger.classList.toggle("is-active");
+
   //this is what fades in each link for the nav overlay NOT NECESSERY
   links.forEach(link => {
     //this will call the area fade in the css
@@ -85,3 +88,25 @@ hamburger.addEventListener("click", () => {
  // $(this).addClass('active').siblings().removeClass('active')
 //})
 
+window.onload = function () {
+	window.addEventListener('scroll', function (e) {
+		if (window.pageYOffset > 100) {
+			document.querySelector("header").classList.add('is-scrolling');
+		} else {
+			document.querySelector("header").classList.remove('is-scrolling');
+		}
+	});
+
+	const menu_btn = document.querySelector('.hamburger');
+	const mobile_menu = document.querySelector('.mobile-nav');
+    const navLinks = document.querySelector(".nav-links");
+	menu_btn.addEventListener('click', function () {
+        hamburger.classList.toggle(".animate");
+		menu_btn.classList.toggle('is-active');
+		mobile_menu.classList.toggle('is-active');
+	});
+    links.forEach(link => {
+        //this will call the area fade in the css
+        link.classList.toggle("fade");
+      });
+}

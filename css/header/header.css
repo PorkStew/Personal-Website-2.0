@@ -1,3 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  z-index: 9999;
+  position: absolute;
+  padding-top: 30px;
+  padding-left: 35px;
+  font-size: 22px;
+  color: #ffff;
+  font: bold;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.logo-clay {
+  color: #ff893a;
+}
+
 .mobile-nav {
   position: fixed;
   top: 0;
@@ -37,17 +61,60 @@
 }
 
 .menu {
+  display: none;
   position: fixed;
   right: 50px;
   top: 40%;
 }
 
+.hamburger div:nth-child(1) {
+  width: 27px;
+}
+
+.hamburger div:nth-child(2) {
+  width: 32px;
+}
+
+.hamburger div:nth-child(3) {
+  width: 25px;
+}
+
+.hamburger {
+  z-index: 3;
+  position: absolute;
+  cursor: pointer;
+  right: 24px;
+  padding-top: 27px;
+}
+
+.hamburger.animate {
+  margin-top: -2px;
+}
+
+.hamburger.animate .line:nth-child(1) {
+  width: 27px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transform-origin: 0% 48%;
+          transform-origin: 0% 48%;
+}
+
+.hamburger.animate .line:nth-child(2) {
+  width: 27px;
+  opacity: 0;
+}
+
+.hamburger.animate .line:nth-child(3) {
+  width: 27px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transform-origin: 16% 100%;
+          transform-origin: 16% 100%;
+}
+
 .blue {
   position: relative;
   z-index: 2;
-  /* this takes the 2 divs and makes them one so its one line
-  to see this change the red color and blue while removing transform */
-  /* transform: translateX(-25px); */
 }
 
 .color-picker-svg {
@@ -71,21 +138,13 @@
 }
 
 #color-picker {
-  fill: #FFFF;
+  fill: #ffff;
   z-index: 3;
   width: 10px !important;
   height: 10px;
   position: relative;
   margin-top: 32%;
   margin-left: 35%;
-}
-
-.menu {
-  display: none;
-}
-
-.container {
-  /* padding-right: 100px; */
 }
 
 .home-dot {
@@ -137,17 +196,11 @@ a.fill-div {
   position: absolute;
   top: 0;
   right: 1px;
-  /* visibility: hidden; */
-  /* make this 2 to show colors */
   background-color: #202324;
   font-size: 0;
-  /* width: 430px; */
-  /* set to 100px */
   -webkit-transition: all 1.3s;
   transition: all 1.3s;
-  /* width100% with overflow makes the dots come from inside the dot and not the far right */
   text-align: center;
-  /* width: 100%; */
   visibility: hidden;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -160,188 +213,112 @@ a.fill-div {
 .color3,
 .color4,
 .color5 {
-  margin-top: 13px;
+  margin-top: 16px;
 }
 
-/* .colors { */
-/* width100% with overflow makes the bots come from inside the dot and not the far right */
-/* text-align: center; */
-/* width: 100%; */
-/* width: 0px;
-  visibility: hidden;
-  padding-top: 30px;
-  padding-left: 40px;
-  display: inline-flex;
-  overflow: hidden;
-} */
 .color1 {
   /* margin-left moves all dots to the right */
   margin-left: 30px;
   outline: none !important;
   visibility: initial;
-  height: 40px;
-  width: 40px;
-  /* opacity: 0; */
+  height: 35px;
+  width: 35px;
   margin-right: 20px;
   border-radius: 150px;
-  background-color: #FF4444;
+  background-color: #ff4444;
   display: block;
 }
 
 .color2 {
   visibility: initial;
-  height: 40px;
-  width: 40px;
-  /* opacity: 0; */
+  height: 35px;
+  width: 35px;
   margin-right: 20px;
   border-radius: 150px;
-  background-color: #00BFFF;
+  background-color: #00bfff;
   display: block;
 }
 
 .color3 {
   visibility: initial;
-  height: 40px;
-  width: 40px;
-  /* opacity: 0; */
+  height: 35px;
+  width: 35px;
   margin-right: 20px;
   border-radius: 150px;
-  background-color: #08FF00;
+  background-color: #08ff00;
   display: block;
 }
 
 .color4 {
   border-radius: 150px;
   visibility: initial;
-  height: 40px;
-  width: 40px;
-  /* opacity: 0; */
+  height: 35px;
+  width: 35px;
   margin-right: 20px;
-  background-color: #FF893A;
+  background-color: #ff893a;
   display: block;
 }
 
 .color5 {
-  /* visibility: initial; */
-  height: 40px;
-  width: 40px;
-  /* opacity: 0; */
+  height: 35px;
+  width: 35px;
   margin-right: 50px;
   border-radius: 150px;
-  background-color: #003CFF;
+  background-color: #003cff;
 }
 
-/* .blue:hover + .red {
-  width: 430px;
-} */
 .red:hover ~ .red {
-  width: 430px !important;
+  width: 370px !important;
 }
 
 .red:hover {
   visibility: initial;
-  width: 430px;
+  width: 370px;
 }
 
 .blue:hover ~ .red {
   visibility: initial;
-  width: 430px;
+  width: 370px;
 }
 
-/* .red:hover .colors {
-  visibility: initial;
-  width: 100%;
-  
-}
-
-.blue:hover~.red .colors {
-  visibility: initial;
-  width: 100%;
-  
-} */
 .blue:hover ~ .red .color1 {
   visibility: initial;
   opacity: 1;
-  /* transition: opacity 5s; */
 }
 
 .red:hover .color1 {
   visibility: initial;
   opacity: 1;
-  /* transition: opacity 5s; */
-}
-
-.blue:hover ~ .red .color2 {
-  /* visibility: initial; */
-  /* opacity: 1; */
-  /* transition: opacity 5s; */
-}
-
-.red:hover .color2 {
-  /* visibility: initial; */
-  /* opacity: 1; */
-  /* transition: opacity 5s; */
 }
 
 .blue:hover ~ .red .color3 {
   visibility: initial;
   opacity: 1;
-  /* transition: opacity 5s; */
 }
 
 .red:hover .color3 {
   visibility: initial;
   opacity: 1;
-  /* transition: opacity 5s; */
 }
 
 .blue:hover ~ .red .color4 {
   visibility: initial;
   opacity: 1;
-  /* transition: opacity 5s; */
 }
 
 .red:hover .color4 {
   visibility: initial;
   opacity: 1;
-  /* transition: opacity 5s; */
 }
 
 .blue:hover ~ .red .color5 {
   visibility: initial;
   opacity: 1;
-  /* transition: opacity 5s; */
 }
 
 .red:hover .color5 {
   visibility: initial;
   opacity: 1;
-  /* transition: opacity 5s; */
-}
-
-.app-style-class {
-  border: 5px solid white;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-.logo {
-  z-index: 9999;
-  position: absolute;
-  padding-top: 30px;
-  padding-left: 35px;
-  font-size: 22px;
-  color: #ffff;
-  font: bold;
-}
-
-.logo-clay {
-  color: #FF893A;
 }
 
 .line {
@@ -352,63 +329,11 @@ a.fill-div {
   transition: all cubic-bezier(0.26, 1, 0.27, 1.55) 0.35s;
 }
 
-.hamburger div:nth-child(1) {
-  width: 27px;
-}
-
-.hamburger div:nth-child(2) {
-  width: 32px;
-}
-
-.hamburger div:nth-child(3) {
-  width: 25px;
-}
-
-.hamburger {
-  z-index: 3;
-  position: absolute;
-  cursor: pointer;
-  right: 24px;
-  padding-top: 27.0px;
-}
-
-.hamburger.animate {
-  margin-top: -2px;
-}
-
-.hamburger.animate .line:nth-child(1) {
-  width: 27px;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  -webkit-transform-origin: 0% 48%;
-          transform-origin: 0% 48%;
-}
-
-.hamburger.animate .line:nth-child(2) {
-  width: 27px;
-  opacity: 0;
-}
-
-.hamburger.animate .line:nth-child(3) {
-  width: 27px;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  -webkit-transform-origin: 16% 100%;
-          transform-origin: 16% 100%;
-}
-
-.landing {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
 li.fade {
   opacity: 1;
 }
 
-@media screen and (min-width: 910px) {
+@media screen and (min-width: 990px) {
   .hamburger {
     display: none;
   }

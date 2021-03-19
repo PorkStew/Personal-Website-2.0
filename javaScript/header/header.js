@@ -50,7 +50,8 @@ colorButton.on("click", function () {
     $(".logo-clay").css("color", newColor);
     $(".submitBtn").css("background-color", newColor);
     $("hr").css("border-color", newColor);
-
+    $(".home-dot").css("background-color", newColor);
+    $(".contact-dot").css("background-color", newColor);
     //index.html
     $(".stewart-clay").css("color", newColor);
     $(".seeMore").css("background-color", newColor);

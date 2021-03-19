@@ -1,71 +1,125 @@
-//Variable Declarations
+//Variable Declarations START
 $background-color: #151515;
-$primay-accent-color: #FF893A;
+$mobile-nav-background-color: #24104f;
+$primay-accent-color: #ff893a;
 $white-fonts: #FFF;
 $white-button-color: #FFF;
-
-
+$color-picker-color-1: #ff4444;
+$color-picker-color-2: #00bfff;
+$color-picker-color-3: #08ff00;
+$color-picker-color-4: #ff893a;
+$color-picker-color-5: #003cff;
+$primary-dot-background-color: #202324;
+//not used
+$color-picker-dot-border-color: #FFF;
+//global styles START
+* {
+  margin: 0;
+  padding: 0;
+}
+//global styles END------------------
+// Logo - STEWARTCLAY START
+.logo {
+  z-index: 9999;
+  position: absolute;
+  padding-top: 30px;
+  padding-left: 35px;
+  font-size: 22px;
+  color: #ffff;
+  font: bold;
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+}
+.logo-clay {
+  color: #ff893a;
+}
+//Logo - STEWARTCLAY END ------------
+//Variable Declarations END----------------
 .mobile-nav {
-	position: fixed;
-	top: 0;
-	//left: 100%;
+  position: fixed;
+  top: 0;
   right: -100%;
-	width: 100%;
-	min-height: 100vh;
-	display: block;
-	// // z-index: 98;
-	background-color: $background-color;
-	padding-top: 120px;
-	transition: 0.4s;
+  width: 100%;
+  min-height: 100vh;
+  display: block;
+  background-color: $background-color;
+  padding-top: 120px;
+  transition: 0.4s;
   transition: all 1000ms ease-out;
 }
-  // display: flex;
-  // list-style: none;
-  // width: 50%;
-  // height: 100%;
-  // justify-content: space-around;
-  // align-items: center;
-  // margin-left: auto;
+//Mobile navigation and hamburger START
 .mobile-nav.is-active {
-	//left: 0;
+  //left: 0;
   right: 0;
-  .hamburger{
+  .hamburger {
     position: fixed;
   }
 }
-
 .mobile-nav a {
-	display: block;
-	width: 100%;
-	max-width: 200px;
-	margin: 0 auto 16px;
-	text-align: center;
-	padding: 12px 16px;
- 
-	// background-color: #1f103F;
-
-	color: #FFF;
-	text-decoration: none;
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto 16px;
+  text-align: center;
+  padding: 12px 16px;
+  color: $white-fonts;
+  text-decoration: none;
 }
-
-
 .mobile-nav a:hover {
-	background-color: #24104f;
+  background-color: $mobile-nav-background-color;
+}
+.menu {
+  display: none;
+  position: fixed;
+  right: 50px;
+  top: 40%;
+}
+.hamburger div:nth-child(1) {
+  width: 27px;
+}
+.hamburger div:nth-child(2) {
+  width: 32px;
+}
+.hamburger div:nth-child(3) {
+  width: 25px;
 }
 
-.menu{
-  //display: none;
-  position: fixed;
-  // float: right;
-    right: 50px;
-    top: 40%;
+.hamburger {
+  z-index: 3;
+  position: absolute;
+  cursor: pointer;
+  right: 24px;
+  padding-top: 27px;
+
 }
+//Hamburger animation START
+.hamburger.animate {
+  //moves ham to be inline with menu text
+  margin-top: -2px;
+  .line:nth-child(1) {
+    width: 27px;
+    transform: rotate(45deg);
+    transform-origin: 0% 48%;
+  }
+  .line:nth-child(2) {
+    width: 27px;
+    opacity: 0;
+  }
+  .line:nth-child(3) {
+    width: 27px;
+    transform: rotate(-45deg);
+    transform-origin: 16% 100%;
+  }
+}
+//Hamburger animation END-----------
+//Mobile navigation and hamburger END-----------------
+
+//Desktop menu START
 .blue {
   position: relative;
   z-index: 2;
-  /* this takes the 2 divs and makes them one so its one line
-  to see this change the red color and blue while removing transform */
-  /* transform: translateX(-25px); */
 }
 
 .color-picker-svg {
@@ -73,20 +127,20 @@ $white-button-color: #FFF;
   padding-left: 21px;
   padding-top: 12px;
 }
-.home-svg{
+.home-svg {
   width: 30px;
   height: 27px;
   padding-left: 17px;
   padding-top: 18px;
 }
-.chatting-svg{
+.chatting-svg {
   width: 27px;
   height: 27px;
   padding-left: 19px;
   padding-top: 20px;
 }
 #color-picker {
-  fill: #FFFF;
+  fill: #ffff;
   z-index: 3;
   width: 10px !important;
   height: 10px;
@@ -94,31 +148,24 @@ $white-button-color: #FFF;
   margin-top: 32%;
   margin-left: 35%;
 }
-.menu{
-  display: none;
-}
-.container {
-  /* padding-right: 100px; */
-
-}
-.home-dot{
+.home-dot {
   width: 65px;
   height: 65px;
   border-radius: 150px;
   margin-top: 10px;
   // float: right;
   /* sets the postion of the blocks */
-  background-color: #202324;
+  background-color: $primary-dot-background-color;
   box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
   border: 0;
 }
-.contact-dot{
+.contact-dot {
   width: 65px;
   height: 65px;
   border-radius: 150px;
   margin-top: 10px;
   /* sets the postion of the blocks */
-  background-color: #202324;
+  background-color: $primary-dot-background-color;
   box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
   border: 0;
 }
@@ -136,7 +183,7 @@ a.fill-div {
   border-radius: 150px;
   /* sets the postion of the blocks */
   // float: right;
-  background-color: #202324;
+  background-color: $primary-dot-background-color;
   box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
   border: 0;
 }
@@ -150,370 +197,147 @@ a.fill-div {
   //fixes issue that the white dot of selected color would show a little on the right of the color picker
   right: 1px;
   //------------
-  /* visibility: hidden; */
-  /* make this 2 to show colors */
-  // transform: translateX(98px);
-  background-color: #202324;
+  background-color: $primary-dot-background-color;
   font-size: 0;
-  /* width: 430px; */
-  /* set to 100px */
-
   transition: all 1.3s;
-  /* width100% with overflow makes the dots come from inside the dot and not the far right */
   text-align: center;
-  /* width: 100%; */
-
   visibility: hidden;
-
   display: inline-flex;
   overflow: hidden;
 }
-
 .color1,
 .color2,
 .color3,
 .color4,
 .color5 {
-  margin-top: 13px;
+  margin-top: 16px;
 }
-
-/* .colors { */
-/* width100% with overflow makes the bots come from inside the dot and not the far right */
-/* text-align: center; */
-/* width: 100%; */
-/* width: 0px;
-  visibility: hidden;
-  padding-top: 30px;
-  padding-left: 40px;
-  display: inline-flex;
-  overflow: hidden;
-} */
 
 .color1 {
   /* margin-left moves all dots to the right */
   margin-left: 30px;
   outline: none !important;
   visibility: initial;
-  height: 40px;
-  width: 40px;
-  /* opacity: 0; */
+  height: 35px;
+  width: 35px;
   margin-right: 20px;
   border-radius: 150px;
-  background-color: #FF4444;
+  background-color: $color-picker-color-1;
   display: block;
 }
 
 .color2 {
   visibility: initial;
-  height: 40px;
-  width: 40px;
-  /* opacity: 0; */
+  height: 35px;
+  width: 35px;
   margin-right: 20px;
   border-radius: 150px;
-  background-color: #00BFFF;
+  background-color: $color-picker-color-2;
   display: block;
 }
 
 .color3 {
   visibility: initial;
-  height: 40px;
-  width: 40px;
-  /* opacity: 0; */
+  height: 35px;
+  width: 35px;
   margin-right: 20px;
   border-radius: 150px;
-  background-color: #08FF00;
+  background-color: $color-picker-color-3;
   display: block;
 }
 
 .color4 {
   border-radius: 150px;
   visibility: initial;
-  height: 40px;
-  width: 40px;
-  /* opacity: 0; */
+  height: 35px;
+  width: 35px;
   margin-right: 20px;
-  background-color: #FF893A;
+  background-color: $color-picker-color-4;
   display: block;
 }
 
 .color5 {
-  /* visibility: initial; */
-  height: 40px;
-  width: 40px;
-  /* opacity: 0; */
+  height: 35px;
+  width: 35px;
   margin-right: 50px;
   border-radius: 150px;
-  background-color: #003CFF;
+  background-color: $color-picker-color-5;
 }
-
-/* .blue:hover + .red {
-  width: 430px;
-} */
-.red:hover~.red {
-  width: 430px !important;
+.red:hover ~ .red {
+  width: 370px !important;
 }
 
 .red:hover {
   visibility: initial;
-  width: 430px;
-
+  width: 370px;
 }
 
-.blue:hover~.red {
+.blue:hover ~ .red {
   visibility: initial;
-  width: 430px;
-
+  width: 370px;
 }
-
-/* .red:hover .colors {
-  visibility: initial;
-  width: 100%;
-  
-}
-
-.blue:hover~.red .colors {
-  visibility: initial;
-  width: 100%;
-  
-} */
-
-.blue:hover~.red .color1 {
+.blue:hover ~ .red .color1 {
   visibility: initial;
   opacity: 1;
-  /* transition: opacity 5s; */
 }
 
 .red:hover .color1 {
   visibility: initial;
   opacity: 1;
-  /* transition: opacity 5s; */
 }
-
-.blue:hover~.red .color2 {
-  /* visibility: initial; */
-  /* opacity: 1; */
-  /* transition: opacity 5s; */
-}
-
-.red:hover .color2 {
-  /* visibility: initial; */
-  /* opacity: 1; */
-  /* transition: opacity 5s; */
-}
-
-.blue:hover~.red .color3 {
+.blue:hover ~ .red .color3 {
   visibility: initial;
   opacity: 1;
-  /* transition: opacity 5s; */
 }
 
 .red:hover .color3 {
   visibility: initial;
   opacity: 1;
-  /* transition: opacity 5s; */
 }
 
-.blue:hover~.red .color4 {
+.blue:hover ~ .red .color4 {
   visibility: initial;
   opacity: 1;
-  /* transition: opacity 5s; */
 }
 
 .red:hover .color4 {
   visibility: initial;
   opacity: 1;
-  /* transition: opacity 5s; */
 }
 
-.blue:hover~.red .color5 {
+.blue:hover ~ .red .color5 {
   visibility: initial;
   opacity: 1;
-  /* transition: opacity 5s; */
 }
 
 .red:hover .color5 {
   visibility: initial;
   opacity: 1;
-  /* transition: opacity 5s; */
+}
+//Desktop menu END-------------
+.line {
+  height: 3px;
+  background-color: rgb(255, 255, 255);
+  margin: 5px;
+  transition: all cubic-bezier(0.26, 1, 0.27, 1.55) 0.35s;
 }
 
-.app-style-class {
 
-  border: 5px solid white;
-  box-sizing: border-box;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-//whole nav bar area
-// nav {
-//   height: 100px;
-// }
-//------------
-//stewartclay
-.logo{
-  z-index: 9999;
-  position: absolute;
-  padding-top: 30px;
-  padding-left: 35px;
-  font-size: 22px;
-  color: #ffff;
-  font: bold;
-}
-.logo-clay{
-  color: #FF893A;
-}
-//------------
-// .nav-links {
-//   display: flex;
-//   list-style: none;
-//   width: 50%;
-//   height: 100%;
-//   justify-content: space-around;
-//   align-items: center;
-//   margin-left: auto;
-// }
-
-// .nav-links li a {
-//   float: right;
-//   font-size: 25px;
-//   padding-right: 40px;
-//     // color: #FFFF;
-//     color: #FFFF;
-//   text-decoration: none;
-
-// }
-  .line {
-    height: 3px;
-    background-color: rgb(255, 255, 255);
-    margin: 5px;
-    transition:  all cubic-bezier(0.26, 1.0, 0.27, 1.55) 0.35s;
-  }
-.hamburger div:nth-child(1){
-    width: 27px;
-   // float: right;
-}
-.hamburger div:nth-child(2){
-  width: 32px;
-  //float: right;
-}
-.hamburger div:nth-child(3){
-width: 25px;
-//float: right;
-}
-  //CAUSES an issue with the color picker
-// nav {
-//   position: relative;
-// }
-
-.hamburger {
-  z-index: 3;
-  position: absolute;
-  cursor: pointer;
-  right: 24px;
-  padding-top: 27.0px;
-  //transform: translate(-5%, -50%);
-}
-
-// .nav-links {
-//   z-index: 2;
-//   position: fixed;
-//   background: #151515;
-//  // height: 100vh;
-//   width: 100%;
-//   //flex-direction: column;
-//   padding-top: 100px;
-//   // padding-left: 50px;
-//   display: block;
-//   clip-path: circle(100px at 90% -10%);
-//   -webkit-clip-path: circle(100px at 90% -20%);
-//   transition: all 600ms ease-out;
-//   pointer-events: none;
-// }
-//this is what is called from the js file
-// .nav-links.open {
-//   clip-path: circle(100px at 90% -10%);
-//   -webkit-clip-path: circle(65% at 90% -5%);
-//   pointer-events: all;
-//   //sets the speed for the background to come in
-//   transition: all 600ms ease-in-out;
-//   transform-origin: top left;
-// }
-
-//test animation
-.hamburger.animate{
-    //moves ham to be inline with menu text
-    margin-top: -2px;
-  .line:nth-child(1){
-    width: 27px;
-    transform: rotate(45deg);
-    transform-origin: 0% 48%;
-  }
-  .line:nth-child(2){
-    width: 27px;
-    opacity: 0;
-  }
-  .line:nth-child(3){
-    width: 27px;
-    transform: rotate(-45deg);
-    transform-origin: 16% 100%;
-  }
-}
-
-.landing {
-  flex-direction: column;
-}
-// .nav-links li {
-//   opacity: 0;
-//   padding: 30px;
-// }
-// .nav-links li a {
-//   font-size: 25px;
-//   color: #FFFF;
-//   margin-top: -30px;
-// }
-// .nav-links li:nth-child(1) {
-//   transition: all 0.5s ease 0.4s;
-// }
-// .nav-links li:nth-child(2) {
-//   transition: all 0.5s ease 0.4s;
-// }
-// .nav-links li:nth-child(3) {
-//   transition: all 0.5s ease 0.4s;
-// }
-// .nav-links li:nth-child(4) {
-//   transition: all 0.5s ease 0.4s;
-// }
 //this is what is called from the js file
 li.fade {
   opacity: 1;
 }
-// hr{
-//   display: none;
-//   width: 50px;
-//   //margin:0 0;
-//   border:1px solid rgb(161, 65, 0);
-// }
-//930 plzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
-@media screen and (min-width: 450px) {
-// .nav-links.open{
-//   -webkit-clip-path: circle(35% at 90% -5%);
-// }
-}
-/////////////////////////1450px
-@media screen and (min-width: 910px) {
-  .hamburger{
+
+// Media query 990px - START
+@media screen and (min-width: 990px) {
+  .hamburger {
     display: none;
+  }
+  .menu {
+    display: block;
+  }
+  .logo {
+    position: fixed;
+  }
 }
-.menu{
-  display: block;
-}
-.logo{
-  position: fixed;
-}
-}
-
-
-
+// Media query 990px - END ---------------

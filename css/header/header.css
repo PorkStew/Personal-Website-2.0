@@ -334,6 +334,12 @@ li.fade {
 }
 
 @media screen and (min-width: 990px) {
+  body {
+    overflow: unset !important;
+  }
+  .mobile-nav {
+    right: -100% !important;
+  }
   .hamburger {
     display: none;
   }

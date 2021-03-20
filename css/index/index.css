@@ -132,8 +132,8 @@ body, html {
 .index-github-dot, .index-linkdin-dot, .index-hackerrank-dot, .index-email-dot {
   text-align: center;
   display: inline-block;
-  width: 64px;
-  height: 64px;
+  width: 65px;
+  height: 65px;
   border-radius: 150px;
   margin-top: 40px;
   /* sets the postion of the blocks */
@@ -143,11 +143,7 @@ body, html {
   border: 0;
 }
 
-.index-linkdin-dot {
-  margin-left: 10px;
-}
-
-.index-hackerrank-dot {
+.index-linkdin-dot, .index-hackerrank-dot {
   margin-left: 10px;
 }
 
@@ -155,11 +151,7 @@ body, html {
   margin-top: 17px;
 }
 
-.index-linkedin-svg {
-  margin-top: 17px;
-}
-
-.index-hackerrank-svg {
+.index-linkedin-svg, .index-hackerrank-svg {
   margin-top: 17px;
 }
 

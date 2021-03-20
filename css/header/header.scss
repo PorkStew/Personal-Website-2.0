@@ -330,6 +330,14 @@ li.fade {
 
 // Media query 990px - START
 @media screen and (min-width: 990px) {
+  //when resizing screen hide or show mobile when open - START
+  body{
+    overflow: unset !important;
+  }
+  .mobile-nav{
+    right: -100% !important;
+  }
+//when resizing screen hide or show mobile when open - END --------
   .hamburger {
     display: none;
   }

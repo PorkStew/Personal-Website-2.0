@@ -1,31 +1,12 @@
-window.onload = random_select;
-function getCookie(color) {
-    var name = color + "=";
-    var decodedCookie = decodeURIComponent(document.cookie);
-    var ca = decodedCookie.split(';');
-    for (var i = 0; i < ca.length; i++) {
-        var c = ca[i];
-        while (c.charAt(0) == ' ') {
-            c = c.substring(1);
-        }
-        if (c.indexOf(name) == 0) {
-            $("h1").css("color", c.substring(name.length, c.length));
-            $("#color-picker").css("fill", c.substring(name.length, c.length));
 
-            return c.substring(name.length, c.length);
-        }
-    }
-    return "";
-}
-function random_select() {
-    //    document.getElementById('main-color').click();
-    //change the color1 to what class you want
-    document.getElementsByClassName('color1')[0].click();
-    var x = document.cookie;
-}
+//Variable Declarations
 var colorButton = $(".red span");
-
 colorButton.on("click", function () {
+    console.log("clkickedsnjkofsdjiunofsdjihnk");
+    console.log(colorButton);
+    console.log(this.classList);
+    var newColor = $(this).attr("data-color");
+    document.cookie = "color=" + this.classList;
     // border:5px solid white !important;
     //     box-sizing: border-box;
     // Remove class from currently active button
@@ -35,79 +16,98 @@ colorButton.on("click", function () {
     $(this).addClass("active-color");
 
     // Get background color of clicked
-    var newColor = $(this).attr("data-color");
-    document.cookie = "color=" + newColor;
     this.classList.add(`app-style-class`);
     //$(this).css({"border" : "5px solid white", "box-sizing" : "border-box"});
     // Change background of everything with class .bg-color
     // $(".bg-color").css("background-color", newColor);
     $("#color-picker").css("fill", newColor);
-
-
+    // document.cookie = newColor;
     // $("body").css("background-color", newColor);
     // Change color of everything with class .text-color
     // $("h1").css("color", newColor);
     $(".logo-clay").css("color", newColor);
     $(".submitBtn").css("background-color", newColor);
     $("hr").css("border-color", newColor);
-    $(".home-dot").css("background-color", newColor);
-    $(".contact-dot").css("background-color", newColor);
+    
     //index.html
     $(".stewart-clay").css("color", newColor);
     $(".seeMore").css("background-color", newColor);
     $(".contactMeBtn").css("background-color", newColor);
     $(".resumeBtn").css("background-color", newColor);
+    if ( document.URL.includes("index.html") ) {
+        $(".home-dot").css("background-color", newColor);
+    } else if(document.URL.includes("contact.html")){
+        $(".contact-dot").css("background-color", newColor);
+    }
 });
 
-const hamburger = document.querySelector(".hamburger");
-const navLinks = document.querySelector(".nav-links");
-// const links = document.querySelectorAll(".nav-links li");
-const links = document.querySelectorAll(".mobile-nav");
-// const list = document.querySelector(".header-body");
-hamburger.addEventListener("click", () => {
-
-    // if($(".header-body").css("overflow") === "hidden"){
-    //     console.log("hidden");
-    //     document.body.style.overflow = 'unset';
-    // }
-    // else{
-    //     console.log("unset");
-    //     document.body.style.overflow = 'hidden';
-    // }
-  //this will call the area open in the css
-//   navLinks.classList.toggle("open");
-  hamburger.classList.toggle("animate");
-  hamburger.classList.toggle("is-active");
-
-  //this is what fades in each link for the nav overlay NOT NECESSERY
-  links.forEach(link => {
-    //this will call the area fade in the css
-    link.classList.toggle("fade");
-  });
-});
-//$(document).on('click', 'div ul li', function() {
- // $(this).addClass('active').siblings().removeClass('active')
-//})
 
 window.onload = function () {
-	window.addEventListener('scroll', function (e) {
-		if (window.pageYOffset > 100) {
-			document.querySelector("header").classList.add('is-scrolling');
-		} else {
-			document.querySelector("header").classList.remove('is-scrolling');
-		}
-	});
+    //issue tho is that when you go to a contact page it will reset the color they pick
+    //save the color in a cookie and if its not empty use that color or do a radom one
 
-	const menu_btn = document.querySelector('.hamburger');
-	const mobile_menu = document.querySelector('.mobile-nav');
-    const navLinks = document.querySelector(".nav-links");
-	menu_btn.addEventListener('click', function () {
-        hamburger.classList.toggle(".animate");
-		menu_btn.classList.toggle('is-active');
-		mobile_menu.classList.toggle('is-active');
-	});
-    links.forEach(link => {
-        //this will call the area fade in the css
-        link.classList.toggle("fade");
-      });
+    function getCookie(ccolor) {
+        var color = ccolor + "=";
+        var ca = document.cookie.split(';');
+        for(var i = 0; i < ca.length; i++) {
+          var c = ca[i];
+          while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+          }
+          if (c.indexOf(color) == 0) {
+            return c.substring(color.length, c.length);
+          }
+        }
+        return "";
+      }
+      
+    //   function checkCookie() {
+    //     var user = getCookie("username");
+    //     if (user != "") {
+    //       alert("Welcome again " + user);
+    //     } else {
+    //       user = prompt("Please enter your name:", "");
+    //       if (user != "" && user != null) {
+    //         // setCookie("username", user, 365);
+    //       }
+    //     }
+    //   }
+
+
+    var color = getCookie("color");
+    if(color != ""){
+        console.log("color is set already");
+        document.getElementsByClassName(color)[0].click();
+    } else {
+    var s = Math.round(Math.random() * (5 - 1) + 1);
+    console.log(s);
+    document.getElementsByClassName("color" + s)[0].click();
+    document.cookie = "color=color"+s;
+    }
+    window.addEventListener('scroll', function (e) {
+        
+        if (window.pageYOffset > 100) {
+            document.querySelector("nav").classList.add('is-scrolling');
+        } else {
+            document.querySelector("nav").classList.remove('is-scrolling');
+        }
+    });
+    const hamburger = document.querySelector(".hamburger");
+    const menu_btn = document.querySelector('.hamburger');
+    const mobile_menu = document.querySelector('.mobile-nav');
+    // const navLinks = document.querySelector(".nav-links");
+    menu_btn.addEventListener('click', function () {
+        hamburger.classList.toggle("animate");
+        hamburger.classList.toggle("is-active");
+        menu_btn.classList.toggle('is-active');
+        mobile_menu.classList.toggle('is-active');
+        $("body").css("overflow", 'hidden');
+    });
+
+    // hamburger.forEach(link => {
+    //     //this will call the area fade in the css
+    //     link.classList.toggle("fade");
+    // });
 }
+
+

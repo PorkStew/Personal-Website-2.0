@@ -218,117 +218,6 @@ body, html {
   padding-right: 10px;
 }
 
-.about-project-1 .viewProjectBtn {
-  text-align: center;
-  display: block;
-  font-size: 14px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  margin: auto;
-  display: block;
-  margin-top: 20px;
-  width: 160px;
-  height: 38px;
-  border-radius: 5px;
-  color: #FFF;
-  background: #2EA44F;
-  border: 0;
-  outline: none;
-}
-
-.about-project-1 .githubBtn {
-  margin-top: 20px;
-  margin: auto;
-  text-align: center;
-  display: block;
-  font-size: 14px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  margin: auto;
-  display: block;
-  margin-top: 20px;
-  width: 107px;
-  height: 38px;
-  border-radius: 5px;
-  color: #000;
-  background: #FFF;
-  border: 0;
-  outline: none;
-}
-
-.about-project-1 .flutterBtn {
-  margin-top: 20px;
-  text-align: center;
-  display: block;
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 1px;
-  margin: auto;
-  display: block;
-  margin-top: 20px;
-  width: 94px;
-  height: 32px;
-  border-radius: 5px;
-  color: #FFF;
-  background: #6A6A6a;
-  border: 0;
-  outline: none;
-}
-
-.about-project-1 .cssBtn {
-  text-align: center;
-  display: block;
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 1px;
-  margin: auto;
-  display: block;
-  margin-top: 20px;
-  width: 51px;
-  height: 32px;
-  border-radius: 5px;
-  color: #FFF;
-  background: #6A6A6a;
-  border: 0;
-  outline: none;
-}
-
-.about-project-1 .androidBtn {
-  text-align: center;
-  display: block;
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 1px;
-  margin: auto;
-  display: block;
-  margin-top: 20px;
-  width: 101px;
-  height: 32px;
-  border-radius: 5px;
-  color: #FFF;
-  background: #6A6A6a;
-  border: 0;
-  outline: none;
-}
-
-.about-project-1 .iosBtn {
-  text-align: center;
-  display: block;
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 1px;
-  margin: auto;
-  display: block;
-  margin-top: 20px;
-  width: 51px;
-  height: 32px;
-  border-radius: 5px;
-  color: #FFF;
-  background: #6A6A6a;
-  border: 0;
-  outline: none;
-}
-
 .project-2 {
   max-width: 275px;
   margin: auto;
@@ -379,7 +268,46 @@ body, html {
   padding-right: 10px;
 }
 
-.about-project-2 .viewProjectBtn2 {
+.project-3 {
+  max-width: 275px;
+  margin: auto;
+  padding-top: 40px;
+}
+
+.topShotTimer {
+  height: 100%;
+}
+
+.about-project-3 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  padding-bottom: 20px;
+  background: #262626;
+}
+
+.about-project-3 h1 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 0px;
+  padding-top: 30px;
+  color: #FFF;
+}
+
+.about-project-3 p {
+  padding-top: 15px;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  color: #FFF;
+  line-height: 32px;
+  padding-right: 10px;
+}
+
+.viewProjectBtn {
   text-align: center;
   display: block;
   font-size: 14px;
@@ -397,7 +325,7 @@ body, html {
   outline: none;
 }
 
-.about-project-2 .githubBtn2 {
+.githubBtn {
   margin-top: 20px;
   margin: auto;
   text-align: center;
@@ -412,12 +340,12 @@ body, html {
   height: 38px;
   border-radius: 5px;
   color: #000;
-  background: #FFFF;
+  background: #FFF;
   border: 0;
   outline: none;
 }
 
-.about-project-2 .flutterBtn2 {
+.flutterBtn {
   margin-top: 20px;
   text-align: center;
   display: block;
@@ -436,7 +364,7 @@ body, html {
   outline: none;
 }
 
-.about-project-2 .cssBtn2 {
+.cssBtn {
   text-align: center;
   display: block;
   font-size: 14px;
@@ -454,7 +382,7 @@ body, html {
   outline: none;
 }
 
-.about-project-2 .androidBtn2 {
+.androidBtn {
   text-align: center;
   display: block;
   font-size: 14px;
@@ -472,7 +400,7 @@ body, html {
   outline: none;
 }
 
-.about-project-2 .iosBtn2 {
+.iosBtn {
   text-align: center;
   display: block;
   font-size: 14px;
@@ -571,30 +499,6 @@ body, html {
     text-align: left;
     max-width: 650px;
   }
-  .about-project-1 .viewProjectBtn {
-    display: inline;
-    margin-top: 40px;
-  }
-  .about-project-1 .githubBtn {
-    margin-left: 20px;
-    display: inline;
-  }
-  .about-project-1 .flutterBtn {
-    margin-left: 50px;
-    display: inline;
-  }
-  .about-project-1 .cssBtn {
-    margin-left: 15px;
-    display: inline;
-  }
-  .about-project-1 .androidBtn {
-    margin-left: 15px;
-    display: inline;
-  }
-  .about-project-1 .iosBtn {
-    margin-left: 15px;
-    display: inline;
-  }
   .project-2 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -631,27 +535,63 @@ body, html {
     text-align: left;
     max-width: 650px;
   }
-  .about-project-2 .viewProjectBtn2 {
+  .project-3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 1178px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .logo-project-3 {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    height: auto;
+    border-radius: 0px 15px 15px 0px;
+  }
+  .about-project-3 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 65%;
+            flex: 0 0 65%;
+    height: auto;
+    text-align: left;
+    padding-left: 45px;
+  }
+  .about-project-3 {
+    height: auto;
+    padding-bottom: 45px;
+  }
+  .about-project-3 h1 {
+    text-align: left;
+  }
+  .about-project-3 p {
+    text-align: left;
+    max-width: 650px;
+  }
+  .viewProjectBtn {
     display: inline;
     margin-top: 40px;
   }
-  .about-project-2 .githubBtn2 {
+  .githubBtn {
     margin-left: 20px;
     display: inline;
   }
-  .about-project-2 .flutterBtn2 {
+  .flutterBtn {
     margin-left: 50px;
     display: inline;
   }
-  .about-project-2 .cssBtn2 {
+  .cssBtn {
     margin-left: 15px;
     display: inline;
   }
-  .about-project-2 .androidBtn2 {
+  .androidBtn {
     margin-left: 15px;
     display: inline;
   }
-  .about-project-2 .iosBtn2 {
+  .iosBtn {
     margin-left: 15px;
     display: inline;
   }

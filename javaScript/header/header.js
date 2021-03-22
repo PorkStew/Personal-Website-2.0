@@ -28,15 +28,15 @@ colorButton.on("click", function () {
     $(".logo-clay").css("color", newColor);
     $(".submitBtn").css("background-color", newColor);
     $("hr").css("border-color", newColor);
-    
+
     //index.html
     $(".stewart-clay").css("color", newColor);
     $(".seeMore").css("background-color", newColor);
     $(".contactMeBtn").css("background-color", newColor);
     $(".resumeBtn").css("background-color", newColor);
-    if ( document.URL.includes("index.html") ) {
+    if (document.URL.includes("index.html")) {
         $(".home-dot").css("background-color", newColor);
-    } else if(document.URL.includes("contact.html")){
+    } else if (document.URL.includes("contact.html")) {
         $(".contact-dot").css("background-color", newColor);
     }
 });
@@ -49,18 +49,18 @@ window.onload = function () {
     function getCookie(ccolor) {
         var color = ccolor + "=";
         var ca = document.cookie.split(';');
-        for(var i = 0; i < ca.length; i++) {
-          var c = ca[i];
-          while (c.charAt(0) == ' ') {
-            c = c.substring(1);
-          }
-          if (c.indexOf(color) == 0) {
-            return c.substring(color.length, c.length);
-          }
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(color) == 0) {
+                return c.substring(color.length, c.length);
+            }
         }
         return "";
-      }
-      
+    }
+
     //   function checkCookie() {
     //     var user = getCookie("username");
     //     if (user != "") {
@@ -75,17 +75,17 @@ window.onload = function () {
 
 
     var color = getCookie("color");
-    if(color != ""){
+    if (color != "") {
         console.log("color is set already");
         document.getElementsByClassName(color)[0].click();
     } else {
-    var s = Math.round(Math.random() * (5 - 1) + 1);
-    console.log(s);
-    document.getElementsByClassName("color" + s)[0].click();
-    document.cookie = "color=color"+s;
+        var s = Math.round(Math.random() * (5 - 1) + 1);
+        console.log(s);
+        document.getElementsByClassName("color" + s)[0].click();
+        document.cookie = "color=color" + s;
     }
     window.addEventListener('scroll', function (e) {
-        
+
         if (window.pageYOffset > 100) {
             document.querySelector("nav").classList.add('is-scrolling');
         } else {
@@ -101,7 +101,16 @@ window.onload = function () {
         hamburger.classList.toggle("is-active");
         menu_btn.classList.toggle('is-active');
         mobile_menu.classList.toggle('is-active');
-        $("body").css("overflow", 'hidden');
+        var x = document.getElementsByTagName("BODY")[0];
+
+        if (document.body.style.overflow == 'hidden') {
+            console.log("is hidden");
+            $("body").css("overflow", 'unset');
+        }
+        else {
+            console.log("unset");
+            $("body").css("overflow", 'hidden');
+        }
     });
 
     // hamburger.forEach(link => {

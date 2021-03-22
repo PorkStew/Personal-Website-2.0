@@ -191,6 +191,7 @@ background: $background-color;
 //   width: 86px;
 //   margin-left: 13%;
 // }
+//project 1 START
 .project-1{
   max-width: 275px;
   margin: auto;
@@ -232,120 +233,9 @@ background: $background-color;
     padding-right: 10px;
     // padding-left: 10px;
   }
-  .viewProjectBtn{
-    
-    text-align: center;
-    display: block;
-
-    font-size: 14px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    margin: auto;
-    display: block;
-    margin-top: 20px;
-    width: 160px;
-    height: 38px;
-    border-radius: 5px;
-    color: $white-fonts;
-    background:$github-color;
-    border: 0;
-    outline: none;
-  }
-  .githubBtn{
-    margin-top: 20px;
-    margin: auto;
-    text-align: center;
-    display: block;
-
-    font-size: 14px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    margin: auto;
-    display: block;
-    margin-top: 20px;
-    width: 107px;
-    height: 38px;
-    border-radius: 5px;
-    color: #000;
-    background: #FFF;
-    border: 0;
-    outline: none;
-  }
-  .flutterBtn{
-    margin-top: 20px;
-    text-align: center;
-    display: block;
-
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    margin: auto;
-    display: block;
-    margin-top: 20px;
-    width: 94px;
-    height: 32px;
-    border-radius: 5px;
-    color: $white-fonts;
-    background: $porfolio-project-languages-background-color;
-    border: 0;
-    outline: none;
-  }
-  .cssBtn{
-    text-align: center;
-    display: block;
-
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    margin: auto;
-    display: block;
-    margin-top: 20px;
-    width: 51px;
-    height: 32px;
-    border-radius: 5px;
-    color: $white-fonts;
-    background: $porfolio-project-languages-background-color;
-    border: 0;
-    outline: none;
-  }
-  .androidBtn{
-    text-align: center;
-    display: block;
-
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    margin: auto;
-    display: block;
-    margin-top: 20px;
-    width: 101px;
-    height: 32px;
-    border-radius: 5px;
-    color: $white-fonts;
-    background: $porfolio-project-languages-background-color;
-    border: 0;
-    outline: none;
-  }
-  .iosBtn{
-    text-align: center;
-    display: block;
-
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    margin: auto;
-    display: block;
-    margin-top: 20px;
-    width: 51px;
-    height: 32px;
-    border-radius: 5px;
-    color: $white-fonts;
-    background: $porfolio-project-languages-background-color;
-    border: 0;
-    outline: none;
-  }
 }
-
+//project 1 END-------------------------
+//project 2 START
 .project-2{
   max-width: 275px;
   margin: auto;
@@ -387,119 +277,160 @@ background: $background-color;
     // padding-left: 10px;
     padding-right: 10px;
   }
-  .viewProjectBtn2{
-    
-    text-align: center;
-    display: block;
-
-    font-size: 14px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    margin: auto;
-    display: block;
-    margin-top: 20px;
-    width: 160px;
-    height: 38px;
-    border-radius: 5px;
-    color: $white-fonts;
-    background: $github-color;
-    border: 0;
-    outline: none;
-  }
-  .githubBtn2{
-    margin-top: 20px;
-    margin: auto;
-    text-align: center;
-    display: block;
-
-    font-size: 14px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    margin: auto;
-    display: block;
-    margin-top: 20px;
-    width: 107px;
-    height: 38px;
-    border-radius: 5px;
-    color: #000;
-    background: #FFFF;
-    border: 0;
-    outline: none;
-  }
-  .flutterBtn2{
-    margin-top: 20px;
-    text-align: center;
-    display: block;
-
-    font-size: 14px;
+}
+//project 2 END------------------
+//project 3 START
+.project-3{
+  max-width: 275px;
+  margin: auto;
+  padding-top: 40px;
+}
+.topShotTimer{
+  height: 100%;
+}
+.about-project-3{
+  flex: 1;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  padding-bottom: 20px;
+  background: #262626;
+  h1{
+    font-size: 24px;
     font-weight: 500;
-    letter-spacing: 1px;
-    margin: auto;
-    display: block;
-    margin-top: 20px;
-    width: 94px;
-    height: 32px;
-    border-radius: 5px;
+    margin-top: 0px;
+    padding-top: 30px;
     color: $white-fonts;
-    background: $porfolio-project-languages-background-color;
-    border: 0;
-    outline: none;
   }
-  .cssBtn2{
-    text-align: center;
-    display: block;
-
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    margin: auto;
-    display: block;
-    margin-top: 20px;
-    width: 51px;
-    height: 32px;
-    border-radius: 5px;
+  p{
+    padding-top: 15px;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 2px;
     color: $white-fonts;
-    background: $porfolio-project-languages-background-color;
-    border: 0;
-    outline: none;
-  }
-  .androidBtn2{
-    text-align: center;
-    display: block;
-
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    margin: auto;
-    display: block;
-    margin-top: 20px;
-    width: 101px;
-    height: 32px;
-    border-radius: 5px;
-    color: $white-fonts;
-    background: $porfolio-project-languages-background-color;
-    border: 0;
-    outline: none;
-  }
-  .iosBtn2{
-    text-align: center;
-    display: block;
-
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    margin: auto;
-    display: block;
-    margin-top: 20px;
-    width: 51px;
-    height: 32px;
-    border-radius: 5px;
-    color: $white-fonts;
-    background: $porfolio-project-languages-background-color;
-    border: 0;
-    outline: none;
+    line-height: 32px;
+    // padding-left: 10px;
+    padding-right: 10px;
+    // padding-left: 10px;
   }
 }
+//project 3 END------------------
+
+//project button styles START
+.viewProjectBtn{
+    
+  text-align: center;
+  display: block;
+
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: auto;
+  display: block;
+  margin-top: 20px;
+  width: 160px;
+  height: 38px;
+  border-radius: 5px;
+  color: $white-fonts;
+  background:$github-color;
+  border: 0;
+  outline: none;
+}
+.githubBtn{
+  margin-top: 20px;
+  margin: auto;
+  text-align: center;
+  display: block;
+
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: auto;
+  display: block;
+  margin-top: 20px;
+  width: 107px;
+  height: 38px;
+  border-radius: 5px;
+  color: #000;
+  background: #FFF;
+  border: 0;
+  outline: none;
+}
+.flutterBtn{
+  margin-top: 20px;
+  text-align: center;
+  display: block;
+
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin: auto;
+  display: block;
+  margin-top: 20px;
+  width: 94px;
+  height: 32px;
+  border-radius: 5px;
+  color: $white-fonts;
+  background: $porfolio-project-languages-background-color;
+  border: 0;
+  outline: none;
+}
+.cssBtn{
+  text-align: center;
+  display: block;
+
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin: auto;
+  display: block;
+  margin-top: 20px;
+  width: 51px;
+  height: 32px;
+  border-radius: 5px;
+  color: $white-fonts;
+  background: $porfolio-project-languages-background-color;
+  border: 0;
+  outline: none;
+}
+.androidBtn{
+  text-align: center;
+  display: block;
+
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin: auto;
+  display: block;
+  margin-top: 20px;
+  width: 101px;
+  height: 32px;
+  border-radius: 5px;
+  color: $white-fonts;
+  background: $porfolio-project-languages-background-color;
+  border: 0;
+  outline: none;
+}
+.iosBtn{
+  text-align: center;
+  display: block;
+
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin: auto;
+  display: block;
+  margin-top: 20px;
+  width: 51px;
+  height: 32px;
+  border-radius: 5px;
+  color: $white-fonts;
+  background: $porfolio-project-languages-background-color;
+  border: 0;
+  outline: none;
+}
+//project button styles END---------
+
 
 .seeMore{
   font-size: 20px;
@@ -601,31 +532,6 @@ display: inline;
    text-align: left;
    max-width: 650px;
  }
-  .viewProjectBtn{
-    
-  display: inline;
-  margin-top: 40px;
- }
- .githubBtn{
-   margin-left: 20px;
-  display: inline;
- }
- .flutterBtn{
-   margin-left: 50px;
-  display: inline;
- }
- .cssBtn{
-  margin-left: 15px;
-  display: inline;
- }
- .androidBtn{
-  margin-left: 15px;
-  display: inline;
- }
- .iosBtn{
-  margin-left: 15px;
-  display: inline;
- }
 }
 
 
@@ -662,33 +568,65 @@ display: inline;
    text-align: left;
    max-width: 650px;
  }
-  .viewProjectBtn2{
+}
+.project-3{
+  display: flex;
+  max-width: 1178px;
+  flex-direction: row-reverse;
+}
+.logo-project-3{
+  flex: 1;
+  height: auto;
+  border-radius: 0px 15px 15px 0px;
+}
+.about-project-3{
+  flex: 0 0 65%;
+  height: auto;
+  text-align: left;
+  padding-left: 45px;
+}
+
+
+// .logo-project-1{
+//   width: 415px;
+// }
+.about-project-3{
+  height: auto;
+  padding-bottom: 45px;
+ h1{
+   text-align: left;
+  
+ }
+ p{
+   text-align: left;
+   max-width: 650px;
+ }
+}
+.viewProjectBtn{
     
   display: inline;
   margin-top: 40px;
  }
- .githubBtn2{
+ .githubBtn{
    margin-left: 20px;
   display: inline;
  }
- .flutterBtn2{
+ .flutterBtn{
    margin-left: 50px;
   display: inline;
  }
- .cssBtn2{
+ .cssBtn{
   margin-left: 15px;
   display: inline;
  }
- .androidBtn2{
+ .androidBtn{
   margin-left: 15px;
   display: inline;
  }
- .iosBtn2{
+ .iosBtn{
   margin-left: 15px;
   display: inline;
  }
-}
-
 .seeMore{
   width: 100%;
     max-width: 1178px;

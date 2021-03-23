@@ -2,47 +2,43 @@
 
 //Variable Declarations
 $background-color: #151515;
-$github-color: #2EA44F;
-$primay-accent-color: #FF893A;
-$white-fonts: #FFF;
-$white-button-color: #FFF;
-$porfolio-project-languages-background-color: #6A6A6a;
+$github-color: #2ea44f;
+$primay-accent-color: #ff893a;
+$white-fonts: #fff;
+$white-button-color: #fff;
+$porfolio-project-languages-background-color: #6a6a6a;
 
-
-
-body, html{
-margin: 0;
-background: $background-color;
+body,
+html {
+  margin: 0;
+  background: $background-color;
 }
 // Landing area START
-.landing-area{
-  background-image:         linear-gradient(
-    rgba(0, 0, 0, 0.7), 
-    rgba(0, 0, 0, 0.7)
-  ), url("../../images/index/john-towner-JgOeRuGD_Y4-unsplash.jpg");
+.landing-area {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../../images/index/john-towner-JgOeRuGD_Y4-unsplash.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  
 
   //background-image: linear-gradient(66deg, transparent 0%, transparent 24%,rgb(38,38,38) 24%, rgb(38,38,38) 80%,transparent 80%, transparent 100%),linear-gradient(153deg, transparent 0%, transparent 29%,rgb(38,38,38) 29%, rgb(38,38,38) 45%,transparent 45%, transparent 100%),linear-gradient(199deg, transparent 0%, transparent 32%,rgb(38,38,38) 32%, rgb(38,38,38) 59%,transparent 59%, transparent 100%),linear-gradient(277deg, transparent 0%, transparent 56%,rgb(38,38,38) 56%, rgb(38,38,38) 57%,transparent 57%, transparent 100%),linear-gradient(90deg, rgb(21,21,21),rgb(21,21,21));
   min-height: 100vh;
-  
+
   //background-color: aqua;
 }
 // Landing area END ------------------
-.portfolio{
+.portfolio {
   // background-color: bisque;
   //Maybe add this back
   // height: 100vh;
 }
 
-.download-resume{
+.download-resume {
   text-decoration: none;
 }
-@keyframes trasitionIn{
-  from{
+@keyframes trasitionIn {
+  from {
     opacity: 0;
     transform: rotateX(-10deg);
   }
@@ -51,13 +47,13 @@ background: $background-color;
     transform: rotateX(0);
   }
 }
-*{
+* {
   font-family: montserrat, sans-serif;
 }
-.welcome{
+.welcome {
   margin: auto;
 }
-.landing-area{
+.landing-area {
   text-align: center;
   // position: absolute;
   display: -webkit-flex;
@@ -65,7 +61,7 @@ background: $background-color;
   // padding-top: 264px;
 }
 
-.hi-there{
+.hi-there {
   padding-top: 40px;
   text-align: center;
   font-size: 20px;
@@ -75,7 +71,7 @@ background: $background-color;
   margin-bottom: 7px;
   color: $white-fonts;
 }
-.im-stewart-clay{
+.im-stewart-clay {
   font-size: 24px;
   font-weight: 700;
   text-align: center;
@@ -87,10 +83,10 @@ background: $background-color;
   //padding-top: 15px;
   color: $white-fonts;
 }
-.stewart-clay{
+.stewart-clay {
   color: $primay-accent-color;
 }
-.about-me{
+.about-me {
   line-height: 32px;
   text-align: center;
   margin: auto;
@@ -106,7 +102,7 @@ background: $background-color;
   padding-right: 22px;
   color: $white-fonts;
 }
-.contactMeBtn{
+.contactMeBtn {
   font-size: 16px;
   font-weight: bold;
   letter-spacing: 3px;
@@ -123,7 +119,7 @@ background: $background-color;
   border: 0;
   outline: none;
 }
-.resumeBtn{
+.resumeBtn {
   cursor: pointer;
   font-size: 16px;
   font-weight: bold;
@@ -139,14 +135,16 @@ background: $background-color;
   box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
   border: 0;
   outline: none;
-
 }
 
 //social links
-.index-social-links{
-  text-align: center; 
+.index-social-links {
+  text-align: center;
 }
-.index-github-dot , .index-linkdin-dot, .index-hackerrank-dot, .index-email-dot{
+.index-github-dot,
+.index-linkdin-dot,
+.index-hackerrank-dot,
+.index-email-dot {
   text-align: center;
   display: inline-block;
   width: 65px;
@@ -159,21 +157,23 @@ background: $background-color;
   border: 0;
 }
 
-.index-linkdin-dot, .index-hackerrank-dot{
+.index-linkdin-dot,
+.index-hackerrank-dot {
   margin-left: 10px;
 }
-.index-github-svg{
+.index-github-svg {
   margin-top: 17px;
 }
-.index-linkedin-svg, .index-hackerrank-svg{
+.index-linkedin-svg,
+.index-hackerrank-svg {
   margin-top: 17px;
 }
 //------------------
-.portfolio{
+.portfolio {
   padding-left: 22px;
   padding-right: 22px;
 }
-.port{
+.port {
   text-align: center;
   font-size: 40px;
   font-weight: 500;
@@ -187,21 +187,21 @@ background: $background-color;
 //   padding-top: 20px;
 //   color: #fff;
 // }
-// .port-hr{
-//   margin-top: 5px;
-//   width: 86px;
-//   margin-left: 13%;
-// }
+.port-hr {
+  margin-top: 5px;
+  width: 200px;
+  margin: auto;
+}
 //project 1 START
-.project-1{
+.project-1 {
   max-width: 275px;
   margin: auto;
   padding-top: 40px;
 }
-.topShotTimer{
+.topShotTimer {
   height: 100%;
 }
-.logo-project-1{
+.logo-project-1 {
   flex: 0 0 65%;
   width: 100%;
   height: 193px;
@@ -209,21 +209,21 @@ background: $background-color;
   background: #283739;
   border-radius: 15px 15px 0px 0px;
 }
-.about-project-1{
+.about-project-1 {
   flex: 1;
   text-align: center;
   width: 100%;
   height: auto;
   padding-bottom: 20px;
   background: #262626;
-  h1{
+  h1 {
     font-size: 24px;
     font-weight: 500;
     margin-top: 0px;
     padding-top: 30px;
     color: $white-fonts;
   }
-  p{
+  p {
     padding-top: 15px;
     font-size: 16px;
     font-weight: 300;
@@ -237,44 +237,42 @@ background: $background-color;
 }
 //project 1 END-------------------------
 //project 2 START
-.project-2{
+.project-2 {
   max-width: 275px;
   margin: auto;
   padding-top: 40px;
 }
 
-.topShotTimer2{
+.topShotTimer2 {
   height: 100%;
 }
-.logo-project-2{
+.logo-project-2 {
   flex: 0 0 65%;
   width: 100%;
   height: 193px;
   text-align: center;
   background: #282e34;
-  background-image: linear-gradient(
-    rgba(0, 0, 0, 0.2), 
-    rgba(0, 0, 0, 0.2)
-  ),  url('../../images/index/FUCHSIA-1200x930-7.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("../../images/index/FUCHSIA-1200x930-7.jpg");
   //background-size: contain;
   background-size: cover;
   border-radius: 15px 15px 0px 0px;
 }
-.about-project-2{
+.about-project-2 {
   flex: 1;
   text-align: center;
   width: 100%;
   height: auto;
   padding-bottom: 20px;
   background: #262626;
-  h1{
+  h1 {
     font-size: 24px;
     font-weight: 500;
     margin-top: 0px;
     padding-top: 30px;
     color: $white-fonts;
   }
-  p{
+  p {
     padding-top: 15px;
     font-size: 16px;
     font-weight: 300;
@@ -287,37 +285,37 @@ background: $background-color;
 }
 //project 2 END------------------
 //project 3 START
-.project-3{
+.project-3 {
   max-width: 275px;
   margin: auto;
   padding-top: 40px;
 }
-.logo-project-3{
+.logo-project-3 {
   flex: 0 0 65%;
   width: 100%;
   height: 193px;
   text-align: center;
   background: #282e34;
-  background-image: url('../../images/index/programming.png');
+  background-image: url("../../images/index/programming.png");
   background-size: cover;
   //background-size: contain;
   border-radius: 15px 15px 0px 0px;
 }
-.about-project-3{
+.about-project-3 {
   flex: 1;
   text-align: center;
   width: 100%;
   height: auto;
   padding-bottom: 20px;
   background: #262626;
-  h1{
+  h1 {
     font-size: 24px;
     font-weight: 500;
     margin-top: 0px;
     padding-top: 30px;
     color: $white-fonts;
   }
-  p{
+  p {
     padding-top: 15px;
     font-size: 16px;
     font-weight: 300;
@@ -332,7 +330,7 @@ background: $background-color;
 //project 3 END------------------
 
 //project button styles START
-.viewProjectBtn{
+.viewProjectBtn {
   cursor: pointer;
   text-align: center;
   display: block;
@@ -348,11 +346,11 @@ background: $background-color;
   // height: 38px;
   border-radius: 5px;
   color: $white-fonts;
-  background:$github-color;
+  background: $github-color;
   border: 0;
   outline: none;
 }
-.githubBtn{
+.githubBtn {
   margin-top: 20px;
   margin: auto;
   text-align: center;
@@ -369,11 +367,11 @@ background: $background-color;
   // height: 38px;
   border-radius: 5px;
   color: #000;
-  background: #FFF;
+  background: #fff;
   border: 0;
   outline: none;
 }
-.flutterBtn{
+.flutterBtn {
   margin-top: 20px;
   text-align: center;
   display: block;
@@ -393,7 +391,7 @@ background: $background-color;
   border: 0;
   outline: none;
 }
-.cssBtn{
+.cssBtn {
   text-align: center;
   display: block;
 
@@ -412,7 +410,7 @@ background: $background-color;
   border: 0;
   outline: none;
 }
-.androidBtn{
+.androidBtn {
   text-align: center;
   display: block;
 
@@ -431,7 +429,7 @@ background: $background-color;
   border: 0;
   outline: none;
 }
-.iosBtn{
+.iosBtn {
   text-align: center;
   display: block;
 
@@ -452,205 +450,189 @@ background: $background-color;
 }
 //project button styles END---------
 
-
-.seeMore{
+.seeMore {
   font-size: 20px;
-font-weight: bold;
-letter-spacing: 3px;
-margin: auto;
-display: block;
-margin-top: 50px;
-width: 275px;
-height: 130px;
-border-radius: 10px;
-color: $white-fonts;
-background: $primay-accent-color;
-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
-border: 0;
-outline: none;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin: auto;
+  display: block;
+  margin-top: 50px;
+  width: 275px;
+  height: 130px;
+  border-radius: 10px;
+  color: $white-fonts;
+  background: $primay-accent-color;
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
+  border: 0;
+  outline: none;
 }
 
 @media screen and (min-width: 425px) {
-
-  .im-stewart-clay{
+  .im-stewart-clay {
     font-size: 40px;
   }
 }
 
-
-
 @media screen and (min-width: 950px) {
+  // body{
+  //   height: 100%  !important;
+  // }
+  .portfolio {
+    margin-left: 140px;
+    margin-right: 140px;
+  }
+  .contactMeBtn {
+    display: inline;
+    //   margin-left: 21%;
+  }
+  .resumeBtn {
+    display: inline;
+    margin-left: 30px !important;
+  }
 
-// body{
-//   height: 100%  !important;
-// }
-.portfolio{
-  margin-left: 140px;
-  margin-right: 140px;
-}
-.contactMeBtn{
-display: inline;
-//   margin-left: 21%;
-}
-.resumeBtn{
-  display: inline;
-  margin-left: 30px !important;
-}
-
-.hi-there{
-  font-size: 22px;
-  // text-align: left;
-  // padding-top: 300px;
-  // padding-left: 21%;
-}
-.im-stewart-clay{
-  font-size: 72.81px;
-  // text-align: left;
-  // padding-left: 20.8%;
-  //padding-right: 100px;
-}
-
+  .hi-there {
+    font-size: 22px;
+    // text-align: left;
+    // padding-top: 300px;
+    // padding-left: 21%;
+  }
+  .im-stewart-clay {
+    font-size: 72.81px;
+    // text-align: left;
+    // padding-left: 20.8%;
+    //padding-right: 100px;
+  }
 }
 @media screen and (min-width: 1000px) {
-// body{
-//    height: 100%  !important;
-//  }
-.portfolio{
-  // padding-left: 22px;
-  // padding-right: 22px;
-  // max-width: 1178px;
-  // margin: auto;
-}
-.project-1{
-  display: flex;
-  max-width: 1178px;
-  flex-direction: row-reverse;
-}
-.logo-project-1{
-  flex: 1;
-  height: auto;
-  border-radius: 0px 15px 15px 0px;
-}
-.about-project-1{
-  flex: 0 0 65%;
-  height: auto;
-  text-align: left;
-  padding-left: 45px;
-}
-
-
-// .logo-project-1{
-//   width: 415px;
-// }
-.about-project-1{
-  height: auto;
-  padding-bottom: 45px;
- h1{
-   text-align: left;
-  
- }
- p{
-   text-align: left;
-   max-width: 650px;
- }
-}
-
-
-
-.project-2{
-  display: flex;
-  max-width: 1178px;
-  flex-direction: row;
-}
-.logo-project-2{
-  flex: 1;
-  height: auto;
-  border-radius: 15px 0px 0px 15px;
-}
-.about-project-2{
-  flex: 0 0 65%;
-  height: auto;
-  text-align: left;
-  padding-left: 45px;
-}
-
-
-// .logo-project-1{
-//   width: 415px;
-// }
-.about-project-2{
-  height: auto;
-  padding-bottom: 45px;
- h1{
-   text-align: left;
-  
- }
- p{
-   text-align: left;
-   max-width: 650px;
- }
-}
-.project-3{
-  display: flex;
-  max-width: 1178px;
-  flex-direction: row-reverse;
-}
-.logo-project-3{
-  flex: 1;
-  height: auto;
-  border-radius: 0px 15px 15px 0px;
-}
-.about-project-3{
-  flex: 0 0 65%;
-  height: auto;
-  text-align: left;
-  padding-left: 45px;
-}
-
-
-// .logo-project-1{
-//   width: 415px;
-// }
-.about-project-3{
-  height: auto;
-  padding-bottom: 45px;
- h1{
-   text-align: left;
-  
- }
- p{
-   text-align: left;
-   max-width: 650px;
- }
-}
-.viewProjectBtn{
-    
-  display: inline;
-  margin-top: 40px;
- }
- .githubBtn{
-   margin-left: 20px;
-  display: inline;
- }
- .flutterBtn{
-   margin-left: 50px;
-  display: inline;
- }
- .cssBtn{
-  margin-left: 15px;
-  display: inline;
- }
- .androidBtn{
-  margin-left: 15px;
-  display: inline;
- }
- .iosBtn{
-  margin-left: 15px;
-  display: inline;
- }
-.seeMore{
-  width: 100%;
+  // body{
+  //    height: 100%  !important;
+  //  }
+  .portfolio {
+    // padding-left: 22px;
+    // padding-right: 22px;
+    // max-width: 1178px;
+    // margin: auto;
+  }
+  .project-1 {
+    display: flex;
     max-width: 1178px;
-}
+    flex-direction: row-reverse;
+  }
+  .logo-project-1 {
+    flex: 1;
+    height: auto;
+    border-radius: 0px 15px 15px 0px;
+  }
+  .about-project-1 {
+    flex: 0 0 65%;
+    height: auto;
+    text-align: left;
+    padding-left: 45px;
+  }
 
+  // .logo-project-1{
+  //   width: 415px;
+  // }
+  .about-project-1 {
+    height: auto;
+    padding-bottom: 45px;
+    h1 {
+      text-align: left;
+    }
+    p {
+      text-align: left;
+      max-width: 650px;
+    }
+  }
+
+  .project-2 {
+    display: flex;
+    max-width: 1178px;
+    flex-direction: row;
+  }
+  .logo-project-2 {
+    flex: 1;
+    height: auto;
+    border-radius: 15px 0px 0px 15px;
+  }
+  .about-project-2 {
+    flex: 0 0 65%;
+    height: auto;
+    text-align: left;
+    padding-left: 45px;
+  }
+
+  // .logo-project-1{
+  //   width: 415px;
+  // }
+  .about-project-2 {
+    height: auto;
+    padding-bottom: 45px;
+    h1 {
+      text-align: left;
+    }
+    p {
+      text-align: left;
+      max-width: 650px;
+    }
+  }
+  .project-3 {
+    display: flex;
+    max-width: 1178px;
+    flex-direction: row-reverse;
+  }
+  .logo-project-3 {
+    flex: 1;
+    height: auto;
+    border-radius: 0px 15px 15px 0px;
+  }
+  .about-project-3 {
+    flex: 0 0 65%;
+    height: auto;
+    text-align: left;
+    padding-left: 45px;
+  }
+
+  // .logo-project-1{
+  //   width: 415px;
+  // }
+  .about-project-3 {
+    height: auto;
+    padding-bottom: 45px;
+    h1 {
+      text-align: left;
+    }
+    p {
+      text-align: left;
+      max-width: 650px;
+    }
+  }
+  .viewProjectBtn {
+    display: inline;
+    margin-top: 40px;
+  }
+  .githubBtn {
+    margin-left: 20px;
+    display: inline;
+  }
+  .flutterBtn {
+    margin-left: 50px;
+    display: inline;
+  }
+  .cssBtn {
+    margin-left: 15px;
+    display: inline;
+  }
+  .androidBtn {
+    margin-left: 15px;
+    display: inline;
+  }
+  .iosBtn {
+    margin-left: 15px;
+    display: inline;
+  }
+  .seeMore {
+    width: 100%;
+    max-width: 1178px;
+  }
 }

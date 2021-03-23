@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
   margin: 0;
   background: #151515;
 }
@@ -60,7 +61,7 @@ body, html {
   font-size: 20px;
   font-weight: 500;
   margin-bottom: 7px;
-  color: #FFF;
+  color: #fff;
 }
 
 .im-stewart-clay {
@@ -69,11 +70,11 @@ body, html {
   text-align: center;
   margin: auto;
   margin-bottom: 7px;
-  color: #FFF;
+  color: #fff;
 }
 
 .stewart-clay {
-  color: #FF893A;
+  color: #ff893a;
 }
 
 .about-me {
@@ -86,7 +87,7 @@ body, html {
   max-width: 817px;
   padding-left: 22px;
   padding-right: 22px;
-  color: #FFF;
+  color: #fff;
 }
 
 .contactMeBtn {
@@ -100,8 +101,8 @@ body, html {
   width: 230px;
   height: 48px;
   border-radius: 10px;
-  color: #FFF;
-  background: #FF893A;
+  color: #fff;
+  background: #ff893a;
   -webkit-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
           box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
   border: 0;
@@ -119,8 +120,8 @@ body, html {
   width: 230px;
   height: 48px;
   border-radius: 10px;
-  color: #FFF;
-  background: #FF893A;
+  color: #fff;
+  background: #ff893a;
   -webkit-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
           box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
   border: 0;
@@ -131,7 +132,10 @@ body, html {
   text-align: center;
 }
 
-.index-github-dot, .index-linkdin-dot, .index-hackerrank-dot, .index-email-dot {
+.index-github-dot,
+.index-linkdin-dot,
+.index-hackerrank-dot,
+.index-email-dot {
   text-align: center;
   display: inline-block;
   width: 65px;
@@ -145,7 +149,8 @@ body, html {
   border: 0;
 }
 
-.index-linkdin-dot, .index-hackerrank-dot {
+.index-linkdin-dot,
+.index-hackerrank-dot {
   margin-left: 10px;
 }
 
@@ -153,7 +158,8 @@ body, html {
   margin-top: 17px;
 }
 
-.index-linkedin-svg, .index-hackerrank-svg {
+.index-linkedin-svg,
+.index-hackerrank-svg {
   margin-top: 17px;
 }
 
@@ -167,7 +173,13 @@ body, html {
   font-size: 40px;
   font-weight: 500;
   padding-top: 20px;
-  color: #FFF;
+  color: #fff;
+}
+
+.port-hr {
+  margin-top: 5px;
+  width: 200px;
+  margin: auto;
 }
 
 .project-1 {
@@ -207,7 +219,7 @@ body, html {
   font-weight: 500;
   margin-top: 0px;
   padding-top: 30px;
-  color: #FFF;
+  color: #fff;
 }
 
 .about-project-1 p {
@@ -215,7 +227,7 @@ body, html {
   font-size: 16px;
   font-weight: 300;
   letter-spacing: 2px;
-  color: #FFF;
+  color: #fff;
   line-height: 32px;
   padding-right: 10px;
 }
@@ -260,7 +272,7 @@ body, html {
   font-weight: 500;
   margin-top: 0px;
   padding-top: 30px;
-  color: #FFF;
+  color: #fff;
 }
 
 .about-project-2 p {
@@ -268,7 +280,7 @@ body, html {
   font-size: 16px;
   font-weight: 300;
   letter-spacing: 2px;
-  color: #FFF;
+  color: #fff;
   line-height: 32px;
   padding-right: 10px;
 }
@@ -308,7 +320,7 @@ body, html {
   font-weight: 500;
   margin-top: 0px;
   padding-top: 30px;
-  color: #FFF;
+  color: #fff;
 }
 
 .about-project-3 p {
@@ -316,7 +328,7 @@ body, html {
   font-size: 16px;
   font-weight: 300;
   letter-spacing: 2px;
-  color: #FFF;
+  color: #fff;
   line-height: 32px;
   padding-right: 10px;
 }
@@ -333,8 +345,8 @@ body, html {
   margin-top: 20px;
   padding: 10px;
   border-radius: 5px;
-  color: #FFF;
-  background: #2EA44F;
+  color: #fff;
+  background: #2ea44f;
   border: 0;
   outline: none;
 }
@@ -353,7 +365,7 @@ body, html {
   padding: 10px;
   border-radius: 5px;
   color: #000;
-  background: #FFF;
+  background: #fff;
   border: 0;
   outline: none;
 }
@@ -370,8 +382,8 @@ body, html {
   margin-top: 20px;
   padding: 10px;
   border-radius: 5px;
-  color: #FFF;
-  background: #6A6A6a;
+  color: #fff;
+  background: #6a6a6a;
   border: 0;
   outline: none;
 }
@@ -387,8 +399,8 @@ body, html {
   margin-top: 20px;
   padding: 10px;
   border-radius: 5px;
-  color: #FFF;
-  background: #6A6A6a;
+  color: #fff;
+  background: #6a6a6a;
   border: 0;
   outline: none;
 }
@@ -404,8 +416,8 @@ body, html {
   margin-top: 20px;
   padding: 10px;
   border-radius: 5px;
-  color: #FFF;
-  background: #6A6A6a;
+  color: #fff;
+  background: #6a6a6a;
   border: 0;
   outline: none;
 }
@@ -421,8 +433,8 @@ body, html {
   margin-top: 20px;
   padding: 10px;
   border-radius: 5px;
-  color: #FFF;
-  background: #6A6A6a;
+  color: #fff;
+  background: #6a6a6a;
   border: 0;
   outline: none;
 }
@@ -437,8 +449,8 @@ body, html {
   width: 275px;
   height: 130px;
   border-radius: 10px;
-  color: #FFF;
-  background: #FF893A;
+  color: #fff;
+  background: #ff893a;
   -webkit-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
           box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
   border: 0;

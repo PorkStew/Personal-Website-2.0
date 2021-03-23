@@ -5,11 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
+
     <link class="shortcut-icon" rel="shortcut icon" href="images/header/Logo.svg" type="image/x-icon" />
     <link href="./css/contact/contact.css" rel="stylesheet" type="text/css" />
-    <script src="javaScript/contact/contact.js"></script>
-    <!-- Calling footer and header -->
+    <!-- Scripts START -->
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="javaScript/contact/contact.js"></script>
+    <!-- Scripts END -->
+    <!-- Calling footer and header START -->
     <script>
         $(function () {
             $("#header").load("header.html");
@@ -18,33 +21,49 @@
             $("#footer").load("footer.html");
         });
     </script>
+    <!-- Calling footer and header END -->
 </head>
 
 <body>
-    <!-- Calling Header  -->
+    <!-- Calling header START -->
     <div id="header">
     </div>
-    
+    <!-- Calling header END -->
     <h1 class="contactMe">CONTACT ME</h1>
-    <hr>
+    <hr class="hr-contactMe">
     <p class="letsExplore">LET'S EXPLORE OUR ENDLESS POSSIBILITES TOGTHER</p>
+    <!-- Contact form START -->
     <div class="contact-form">
         <form id="my-form" action="https://formspree.io/f/meqpyzqw" method="POST" target="_blank">
+            <!-- inputs START -->
             <input name="name" type="name" class="name" placeholder="Your Name" required>
             <input name="email" type="email" class="email" placeholder="Your Email" required>
-            <textarea name="message" type="message" class="message" placeholder="Message" required></textarea>
-            <button class="submitBtn">SUBMIT</button>
+            <textarea name="message" type="message" class="message" placeholder="Message" required></textarea>3
+            <!-- inputs END -->
+            <button class="submitBtn">
+                SUBMIT
+                <!-- Send svg START -->
+                <svg class="send-svg" xmlns="http://www.w3.org/2000/svg" width="22" height="18.991"
+                    viewBox="0 0 23 19.991">
+                    <g id="send" transform="translate(-0.001 -33.492)">
+                        <path id="Path_237" data-name="Path 237"
+                            d="M22.985,34.308a.674.674,0,0,0-.9-.772L.434,41.8a.674.674,0,0,0,0,1.258L6.515,45.41v7.4a.674.674,0,0,0,1.276.3l2.516-4.992,6.139,4.556a.674.674,0,0,0,1.046-.345C23.223,33.538,22.975,34.356,22.985,34.308Zm-5.345,2.368L7.093,44.188,2.555,42.436ZM7.862,45.295l9.194-6.548c-7.911,8.346-7.5,7.907-7.533,7.953-.051.069.089-.2-1.661,3.274Zm8.619,5.73-5.4-4.01,9.771-10.308Z"
+                            transform="translate(0 0)" fill="#fff" />
+                    </g>
+                </svg>
+                <!-- Send svg END -->
+            </button>
         </form>
     </div>
+    <!-- Contact Form END -->
     <div id="status"></div>
     <div style="position: absolute; left: -5000px;">
         <input type="checkbox" name="wonderful_magenta_waved_elephant" value="1" tabindex="-1" autocomplete="no">
     </div>
-    <!-- Calling footer  -->
+    <!-- Calling footer START -->
     <div id="footer">
     </div>
-    <!---->
+    <!-- Calling footer END -->
 </body>
-
 
 </html>

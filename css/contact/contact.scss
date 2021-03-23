@@ -1,158 +1,129 @@
-
-
-body,html{ 
-    background: #151515;
-    animation: trasitionIn 0.75s;
-  }
-  @keyframes trasitionIn{
-    from{
-      opacity: 0;
-      transform: rotateX(-10deg);
-    }
-    to {
-      opacity: 1;
-      transform: rotateX(0);
-    }
-  }
-  body{
-    // background: url('/images/contact/contact-me-shape.svg') no-repeat center;
-    // background-size: 1000px;
-    // background-position: 50% -10%;
-  }
-  *{
-    font-family: montserrat, sans-serif;
-  }
-  .contactMe{
-      padding-top: 100px;
-      font-size: 32px;
-      font-weight: bold;
-      text-align: center;
-      color: #FFFF;
-     
-  }
-  hr{
-    border: 1px solid #FF893A;
-    width: 150px;
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  .letsExplore{
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 24px;
-    text-align: center;
-    padding-left: 36px;
-    padding-right: 36px;
-    padding-bottom: 40px;
-    color: #A1A1A1;
+//Variable Declarations
+$background-color: #151515;
+$primay-accent-color: #ff893a;
+$white-fonts: #fff;
+$grey-fonts: #a1a1a1;
+//welcome heading and subheading START
+.contactMe {
+  padding-top: 100px;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  color: $white-fonts;
 }
-form{
+.hr-contactMe {
+  border: 1px solid $primay-accent-color;
+  width: 150px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.letsExplore {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+  padding-left: 36px;
+  padding-right: 36px;
+  padding-bottom: 40px;
+  color: $grey-fonts;
+}
+//welcome heading and subheading START ------------
+
+//contact form START
+form {
   margin: auto;
   text-align: center;
   max-width: 1100px;
-
-  // padding-left: 28px;
-  // padding-right: 28px;
-
-
 }
-  .contact-form{
-      text-align: center;
-  }
+.contact-form {
+  text-align: center;
+}
 /*Must include type="text" in HTML*/
-  .name{
-    width: 65%;
-    max-width: 700px;
-    //max-width: 600px;
-    //max-width: 500px;
-    height: 60px;
-    font-size: 16px;
-    font-weight: 300;
-    letter-spacing: 3px;
-    // display: block;
-    //margin: auto;
-    
-   
-    // // margin-left: 28px;
-    // // margin-right: 28px;
-    // text-indent: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
-    // //margin-top: 20px;
-    // //width: 272px;
-    // //width: 987px;
-    background: #1E1E1E;
-    color: #FFFF;
-    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
-    border: 0;
+.name {
+  width: 65%;
+  max-width: 700px;
+  height: 60px;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background: $background-color;
+  color: $white-fonts;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  border: 0;
+}
+.email,
+.message {
+  //width and max-width needed to fix issue that it dose not resize properly for mobile or tablet
+  width: 65%;
+  max-width: 700px;
+  //---------------
+  height: 60px;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  margin-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background: $background-color;
+  color: $white-fonts;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  border: 0;
+}
+.message {
+  height: 216px;
+  padding-top: 29px;
+}
+input:focus {
+  outline: none !important;
+}
+textarea:focus {
+  outline: none !important;
+}
+.submitBtn {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin: auto;
+  display: block;
+  margin-top: 30px;
+  width: 230px;
+  height: 48px;
+  border-radius: 10px;
+  color: $white-fonts;
+  background: $primay-accent-color;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
+  border: 0;
+  outline: none;
+  transition: background-color 0.5s ease;
+  .send-svg {
+    //helps center the icon and text for the submit button of the form
+    position: relative;
+    top: 0.15em;
   }
-    .email, .message{
-      //width and max-width need to fix issue that it dose not resize properly for mobile or tablet
-      width: 65%;
-      max-width: 700px;
-      //---------------
-      height: 60px;
-      font-size: 16px;
-      font-weight: 300;
-      letter-spacing: 3px;
-      // display: block;
-      // margin: auto;
-      
-        margin-top: 30px;
-          // // margin-right: 28px;
-      // text-indent: 30px;
-      padding-left: 30px;
-      padding-right: 30px;
-    // //margin-top: 20px;
-    // //width: 272px;
-    // //width: 987px;
-      background: #1E1E1E;
-      color: #FFFF;
-      box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
-      border: 0;
-   }
-   .message{
-     //height: 1000px;
-     //PUT BACK PLEASE
-    height: 216px;
-        padding-top: 29px;
-       
-   }
-   input:focus{
-     outline: none !important;
-   }
-   textarea:focus{
-    outline: none !important;
+}
+.submitBtn:hover {
+  background-color: $background-color !important;
+}
+//contact form END ------------------
+// Media query 425px - START
+@media screen and (min-width: 425px) {
+  .contactMe {
+    font-size: 45px;
   }
-   .submitBtn{
-    font-size: 16px;
-    font-weight: bold;
-    letter-spacing: 3px;
-    margin: auto;
-    display: block;
-    margin-top: 30px;
-    width: 230px;
-    height: 48px;
-    border-radius: 10px;
-    color: #FFFF;
-    background: #FF893A;
-    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
-    border: 0;
-    outline: none;
-   }
-   @media screen and (min-width: 425px) {
-    .contactMe{
-      font-size: 45px;
-    }
-
- }
-   @media screen and (min-width: 630px) {
-    .contactMe{
-      font-size: 72.81px;
-    }
-    hr{
-      width: 278px;
-    }
-   }
+}
+// Media query 425px - END -------------------
+// Media query 630px - START
+@media screen and (min-width: 630px) {
+  .contactMe {
+    font-size: 72.81px;
+  }
+  hr {
+    width: 278px;
+  }
+}
+// Media query 630px - END--------------

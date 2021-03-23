@@ -1,49 +1,13 @@
-body, html {
-  background: #151515;
-  -webkit-animation: trasitionIn 0.75s;
-          animation: trasitionIn 0.75s;
-}
-
-@-webkit-keyframes trasitionIn {
-  from {
-    opacity: 0;
-    -webkit-transform: rotateX(-10deg);
-            transform: rotateX(-10deg);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: rotateX(0);
-            transform: rotateX(0);
-  }
-}
-
-@keyframes trasitionIn {
-  from {
-    opacity: 0;
-    -webkit-transform: rotateX(-10deg);
-            transform: rotateX(-10deg);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: rotateX(0);
-            transform: rotateX(0);
-  }
-}
-
-* {
-  font-family: montserrat, sans-serif;
-}
-
 .contactMe {
   padding-top: 100px;
   font-size: 32px;
   font-weight: bold;
   text-align: center;
-  color: #FFFF;
+  color: #fff;
 }
 
-hr {
-  border: 1px solid #FF893A;
+.hr-contactMe {
+  border: 1px solid #ff893a;
   width: 150px;
   margin: auto;
   margin-top: 10px;
@@ -59,7 +23,7 @@ hr {
   padding-left: 36px;
   padding-right: 36px;
   padding-bottom: 40px;
-  color: #A1A1A1;
+  color: #a1a1a1;
 }
 
 form {
@@ -82,14 +46,15 @@ form {
   letter-spacing: 3px;
   padding-left: 30px;
   padding-right: 30px;
-  background: #1E1E1E;
-  color: #FFFF;
-  -webkit-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
-          box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
+  background: #151515;
+  color: #fff;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   border: 0;
 }
 
-.email, .message {
+.email,
+.message {
   width: 65%;
   max-width: 700px;
   height: 60px;
@@ -99,10 +64,10 @@ form {
   margin-top: 30px;
   padding-left: 30px;
   padding-right: 30px;
-  background: #1E1E1E;
-  color: #FFFF;
-  -webkit-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
-          box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
+  background: #151515;
+  color: #fff;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   border: 0;
 }
 
@@ -120,6 +85,7 @@ textarea:focus {
 }
 
 .submitBtn {
+  cursor: pointer;
   font-size: 16px;
   font-weight: bold;
   letter-spacing: 3px;
@@ -129,12 +95,23 @@ textarea:focus {
   width: 230px;
   height: 48px;
   border-radius: 10px;
-  color: #FFFF;
-  background: #FF893A;
-  -webkit-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
-          box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
+  color: #fff;
+  background: #ff893a;
+  -webkit-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
   border: 0;
   outline: none;
+  -webkit-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+}
+
+.submitBtn .send-svg {
+  position: relative;
+  top: 0.15em;
+}
+
+.submitBtn:hover {
+  background-color: #151515 !important;
 }
 
 @media screen and (min-width: 425px) {

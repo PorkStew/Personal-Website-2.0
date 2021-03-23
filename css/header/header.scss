@@ -2,8 +2,8 @@
 $background-color: #151515;
 $mobile-nav-background-color: #24104f;
 $primay-accent-color: #ff893a;
-$white-fonts: #FFF;
-$white-button-color: #FFF;
+$white-fonts: #fff;
+$white-button-color: #fff;
 $color-picker-color-1: #ff4444;
 $color-picker-color-2: #00bfff;
 $color-picker-color-3: #08ff00;
@@ -11,12 +11,32 @@ $color-picker-color-4: #ff893a;
 $color-picker-color-5: #003cff;
 $primary-dot-background-color: #202324;
 //not used
-$color-picker-dot-border-color: #FFF;
+$color-picker-dot-border-color: #fff;
 //global styles START
 * {
   margin: 0;
   padding: 0;
+  font-family: montserrat, sans-serif;
 }
+body,
+html {
+  background-color: $background-color;
+  //loading animation when openning page, will replace with loading screen and transitions
+  animation: trasitionIn 0.75s;
+}
+//loading animation START
+@keyframes trasitionIn {
+  from {
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
+}
+//loading animation END ------------------------
+
 //global styles END------------------
 // Logo - STEWARTCLAY START
 .logo {
@@ -51,7 +71,6 @@ $color-picker-dot-border-color: #FFF;
 }
 //Mobile navigation and hamburger START
 .mobile-nav.is-active {
-  //left: 0;
   right: 0;
   .hamburger {
     position: fixed;
@@ -92,7 +111,6 @@ $color-picker-dot-border-color: #FFF;
   cursor: pointer;
   right: 24px;
   padding-top: 27px;
-
 }
 //Hamburger animation START
 .hamburger.animate {
@@ -322,7 +340,6 @@ a.fill-div {
   transition: all cubic-bezier(0.26, 1, 0.27, 1.55) 0.35s;
 }
 
-
 //this is what is called from the js file
 li.fade {
   opacity: 1;
@@ -331,13 +348,13 @@ li.fade {
 // Media query 990px - START
 @media screen and (min-width: 990px) {
   //when resizing screen hide or show mobile when open - START
-  body{
+  body {
     overflow: unset !important;
   }
-  .mobile-nav{
+  .mobile-nav {
     right: -100% !important;
   }
-//when resizing screen hide or show mobile when open - END --------
+  //when resizing screen hide or show mobile when open - END --------
   .hamburger {
     display: none;
   }

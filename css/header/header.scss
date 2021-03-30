@@ -4,11 +4,13 @@ $mobile-nav-background-color: #24104f;
 $primay-accent-color: #ff893a;
 $white-fonts: #fff;
 $white-button-color: #fff;
+//colors change here needed to be updated in header.html START
 $color-picker-color-1: #ff4444;
 $color-picker-color-2: #00bfff;
-$color-picker-color-3: #08ff00;
+$color-picker-color-3: #9900ff;
 $color-picker-color-4: #ff893a;
 $color-picker-color-5: #003cff;
+//colors change here needed to be updated in header.html END
 $primary-dot-background-color: #202324;
 //not used
 $color-picker-dot-border-color: #fff;
@@ -90,7 +92,7 @@ html {
   background-color: $mobile-nav-background-color;
 }
 .menu {
-  display: none;
+  // display: none;
   position: fixed;
   right: 50px;
   top: 40%;
@@ -132,6 +134,12 @@ html {
   }
 }
 //Hamburger animation END-----------
+.line {
+  height: 3px;
+  background-color: rgb(255, 255, 255);
+  margin: 5px;
+  transition: all cubic-bezier(0.26, 1, 0.27, 1.55) 0.35s;
+}
 //Mobile navigation and hamburger END-----------------
 
 //Desktop menu START
@@ -333,13 +341,6 @@ a.fill-div {
   opacity: 1;
 }
 //Desktop menu END-------------
-.line {
-  height: 3px;
-  background-color: rgb(255, 255, 255);
-  margin: 5px;
-  transition: all cubic-bezier(0.26, 1, 0.27, 1.55) 0.35s;
-}
-
 //this is what is called from the js file
 li.fade {
   opacity: 1;

@@ -95,7 +95,6 @@ html {
 }
 
 .menu {
-  display: none;
   position: fixed;
   right: 50px;
   top: 40%;
@@ -144,6 +143,14 @@ html {
           transform: rotate(-45deg);
   -webkit-transform-origin: 16% 100%;
           transform-origin: 16% 100%;
+}
+
+.line {
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+  -webkit-transition: all cubic-bezier(0.26, 1, 0.27, 1.55) 0.35s;
+  transition: all cubic-bezier(0.26, 1, 0.27, 1.55) 0.35s;
 }
 
 .blue {
@@ -279,7 +286,7 @@ a.fill-div {
   width: 35px;
   margin-right: 20px;
   border-radius: 150px;
-  background-color: #08ff00;
+  background-color: #9900ff;
   display: block;
 }
 
@@ -353,14 +360,6 @@ a.fill-div {
 .red:hover .color5 {
   visibility: initial;
   opacity: 1;
-}
-
-.line {
-  height: 3px;
-  background-color: white;
-  margin: 5px;
-  -webkit-transition: all cubic-bezier(0.26, 1, 0.27, 1.55) 0.35s;
-  transition: all cubic-bezier(0.26, 1, 0.27, 1.55) 0.35s;
 }
 
 li.fade {

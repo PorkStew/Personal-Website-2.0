@@ -95,6 +95,7 @@ html {
 }
 
 .menu {
+  display: none;
   position: fixed;
   right: 50px;
   top: 40%;
